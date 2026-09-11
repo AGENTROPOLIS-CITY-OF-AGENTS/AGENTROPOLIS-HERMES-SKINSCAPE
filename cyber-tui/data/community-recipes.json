@@ -1,0 +1,5899 @@
+{
+  "schemaVersion": 1,
+  "source": "https://21st.dev/community/ascii",
+  "syncedAt": "2026-09-11T08:34:30.685Z",
+  "policy": "Public recipe configuration and attribution only. Hosted media is referenced, not copied.",
+  "count": 48,
+  "capabilities": {
+    "renderModes": [
+      "braille",
+      "characters",
+      "contour",
+      "cross",
+      "dither",
+      "dots",
+      "halfblocks",
+      "hearts",
+      "hexagons",
+      "lego",
+      "matrix",
+      "mosaic",
+      "pixel",
+      "voxel"
+    ],
+    "animationStyles": [
+      "flicker",
+      "pulse",
+      "ripple",
+      "shimmer",
+      "wave"
+    ],
+    "characterSets": [
+      "binary",
+      "matrix",
+      "standard"
+    ]
+  },
+  "recipes": [
+    {
+      "id": "73ee8257-4261-4c33-8620-4d5100a0ff6d",
+      "slug": "2-73ee8257-4261-4c33-8620-4d5100a0ff6d",
+      "name": "2",
+      "author": "Akash Jadon",
+      "publishedAt": "$D2026-08-26T09:44:53.470Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/2-73ee8257-4261-4c33-8620-4d5100a0ff6d",
+      "publishedComponentPath": "/@geekingdevil/components/2-ascii",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IFqATTbQAw3XKxhoQ6O6wweR7z/19d8e75d-6ee7-44e0-ae48-01a84a17eb21.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IFqATTbQAw3XKxhoQ6O6wweR7z/37de80ed-7368-42ff-9458-6c05a20f218a.mp4",
+      "configFingerprint": "68274aae5d6728d35c0ab6920ffa6b95c0bbf7432520c7c577a4b1a176b62d3d",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 45
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "none",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 10,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "pulse",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "characters",
+        "saturation": 100,
+        "styleBlend": "lighter",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "5ae8b899-6eab-4654-b746-d4684623ff1a",
+      "slug": "aa-5ae8b899-6eab-4654-b746-d4684623ff1a",
+      "name": "aa",
+      "author": "John",
+      "publishedAt": "$D2026-08-31T04:22:40.957Z",
+      "bookmarksCount": 3,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/aa-5ae8b899-6eab-4654-b746-d4684623ff1a",
+      "publishedComponentPath": "/@jfishfl/components/aa",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3Hm1P1O4jLc9DzBKoLSjhLY83hu/7ab43691-b991-43e6-b3f0-9a1c382556fc.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3Hm1P1O4jLc9DzBKoLSjhLY83hu/ceefeb14-becc-4034-a1e2-dd3db5874d49.mp4",
+      "configFingerprint": "820be10bfa0a23e111cd62c45d5f8d33238ba755d5db72535725f7d7eff1de50",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 58
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 32
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "rectangle",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": "https://assets.21st.dev/ascii-recipes/masks/user_3Hm1P1O4jLc9DzBKoLSjhLY83hu/73fa0925-2b57-49c5-a653-3c33f018f249.png",
+          "enabled": true,
+          "brushSize": 85,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 2,
+        "bgMode": "blur",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "tilt",
+        "cellSize": 10,
+        "contrast": 128,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 100,
+        "lensFocus": 40,
+        "sourceUrl": "/ascii-editor/demos/generated/ref-002.webp",
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 30,
+        "brightness": 0,
+        "renderMode": "hexagons",
+        "saturation": 0,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "467a86c2-360e-4e93-bfe4-f2a35795641d",
+      "slug": "aaa-467a86c2-360e-4e93-bfe4-f2a35795641d",
+      "name": "aaa",
+      "author": "Inferno Services",
+      "publishedAt": "$D2026-08-28T21:29:03.063Z",
+      "bookmarksCount": 0,
+      "tags": [
+        {
+          "name": "Terminal",
+          "slug": "terminal"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/aaa-467a86c2-360e-4e93-bfe4-f2a35795641d",
+      "publishedComponentPath": "/@asherevolved/components/aaa",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_30Z4TAnxZmHEKqc0zKYuo9vexqg/645dea97-970b-425c-9443-69f49522d8d2.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_30Z4TAnxZmHEKqc0zKYuo9vexqg/ab159e04-28c5-4d5c-aa75-7b3c4ed594cb.mp4",
+      "configFingerprint": "2a10bd1a2476aee84bdc30b9f81fdc2028d6c40df820c772b37da3749fe4b892",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 1,
+        "bgMode": "blur",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 35,
+        "contrast": 115,
+        "coverage": 87,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 99,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "matrix",
+        "saturation": 100,
+        "styleBlend": "color-dodge",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "8490ea98-3927-41fe-b6d5-15a2e5f6e069",
+      "slug": "aaaaaa-8490ea98-3927-41fe-b6d5-15a2e5f6e069",
+      "name": "aaaaaa",
+      "author": "Syed",
+      "publishedAt": "$D2026-08-30T07:38:54.328Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/aaaaaa-8490ea98-3927-41fe-b6d5-15a2e5f6e069",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3FjoTX3ivJOmUi5lZhLGavo5jjy/15eb45bc-a453-4795-8e40-6b22b6a1eb5b.webp",
+      "videoUrl": null,
+      "configFingerprint": "5d13622f6d703b769e28f2778436e85e21533be190c6a5862a347d5ddeef8561",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 5
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 85
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 20
+          }
+        },
+        "mask": {
+          "tool": "rectangle",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#b99b5f",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 150
+        },
+        "animStyle": "ripple",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0.5395189003436426,
+            "y": 0.7088881951786763
+          },
+          {
+            "x": 0.3505154639175257,
+            "y": 0.3124806311666608
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "hexagons",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 100,
+        "edgeEmphasis": 40,
+        "overlayBlend": "color-dodge",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "3618cc3b-7f61-454e-8fd2-d2fdfd2e7d71",
+      "slug": "abe-3618cc3b-7f61-454e-8fd2-d2fdfd2e7d71",
+      "name": "abe",
+      "author": "Ahmet",
+      "publishedAt": "$D2026-09-01T21:32:56.335Z",
+      "bookmarksCount": 3,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/abe-3618cc3b-7f61-454e-8fd2-d2fdfd2e7d71",
+      "publishedComponentPath": "/@buname/components/abe",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3Ik8pTl35jOpXO7L9mD6yX2ECBo/709a9270-5e84-419a-bd33-c823e1c165df.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3Ik8pTl35jOpXO7L9mD6yX2ECBo/fe5394a0-17f8-4466-90e7-f0e30ac438fd.mp4",
+      "configFingerprint": "5910b8683b5379c48aa2c540bd5a2e96de6109050e235ac196bdef845ee76fc8",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 100
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 1
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 5
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 58
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 32
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#e16aff",
+        "bgBlur": 0,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 52,
+        "animated": true,
+        "blurType": "tilt",
+        "cellSize": 21,
+        "contrast": 128,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 55
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 100,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 19,
+        "brightness": 0,
+        "renderMode": "matrix",
+        "saturation": 0,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "color-dodge",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "00333c6a-96f0-4311-b30e-b215d2f8d297",
+      "slug": "areeb-asci-00333c6a-96f0-4311-b30e-b215d2f8d297",
+      "name": "Areeb Asci",
+      "author": "Rubra",
+      "publishedAt": "$D2026-09-08T05:38:19.593Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/areeb-asci-00333c6a-96f0-4311-b30e-b215d2f8d297",
+      "publishedComponentPath": "/@rubra.001/components/areeb-asci",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3J23dXMKfN6Gy9bhIu4dWv9IXj5/6e7084ce-a36e-404f-b180-7611e9a43cf4.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3J23dXMKfN6Gy9bhIu4dWv9IXj5/f7b504cb-e1db-46ae-8594-1b00d93a37b7.mp4",
+      "configFingerprint": "b57e862a57cc64adf461c0d0314825f3e957670aefd202a118a88ac69bd1d5de",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "none",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 20,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 9,
+        "contrast": 158,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "6cc75507-1e60-4624-8a2d-af79a9cf28fa",
+      "slug": "art-6cc75507-1e60-4624-8a2d-af79a9cf28fa",
+      "name": "art",
+      "author": "jaimayo",
+      "publishedAt": "$D2026-09-01T16:49:12.788Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/art-6cc75507-1e60-4624-8a2d-af79a9cf28fa",
+      "publishedComponentPath": "/@jaimayo88/components/art",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3Iisow6W9Q3uZaewApO9g3i5mas/73f9dfb0-4261-4157-b58a-55156f18b0cc.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3Iisow6W9Q3uZaewApO9g3i5mas/ab528c6c-1d79-4727-9183-c337b5a2a453.mp4",
+      "configFingerprint": "eec9a9191eee32a1beb831df7b9ff3293c73c67edd81ca8b496a6fbabaede9e0",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 45
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 55
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#d8b46a",
+        "bgBlur": 12,
+        "bgMode": "blur",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "tilt",
+        "cellSize": 16,
+        "contrast": 115,
+        "coverage": 70,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 28,
+        "lensFocus": 40,
+        "sourceUrl": "/ascii-editor/demos/generated/ref-024.webp",
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 28,
+        "brightness": 0,
+        "renderMode": "matrix",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 38,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "cc62b78f-9f10-4628-adc2-da8abffe3778",
+      "slug": "art-1-cc62b78f-9f10-4628-adc2-da8abffe3778",
+      "name": "art 1",
+      "author": "Digitam Company",
+      "publishedAt": "$D2026-09-10T20:37:11.305Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/art-1-cc62b78f-9f10-4628-adc2-da8abffe3778",
+      "publishedComponentPath": "/@digitam.company/components/art-1",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3B2s40hsO98WNcGWw69mlpeiUfb/ccb10362-0e0d-48e4-9f9e-2462192b3481.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3B2s40hsO98WNcGWw69mlpeiUfb/ff3287bb-2cb7-4761-a660-f20ed5bd2536.mp4",
+      "configFingerprint": "fce1f70acf3e4f939b91649e47830b2ca6bc2a05b2aef69b2e22081c24d4606e",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "none",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 9,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "wave",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 12,
+        "renderMode": "cross",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "c4a35453-228b-4a88-9b2a-3d64bbd56d12",
+      "slug": "art-gallery-girl-c4a35453-228b-4a88-9b2a-3d64bbd56d12",
+      "name": "art gallery girl",
+      "author": "swil",
+      "publishedAt": "$D2026-09-05T08:31:57.116Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/art-gallery-girl-c4a35453-228b-4a88-9b2a-3d64bbd56d12",
+      "publishedComponentPath": "/@huahaoshang2000/components/art-gallery-girl",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3ItvGfzzxzK23S0i9ptl83odeMQ/ed3c601b-ba96-45db-8e25-610955d4aa91.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3ItvGfzzxzK23S0i9ptl83odeMQ/5cdee0e3-7f77-4876-a447-a252a25223e8.mp4",
+      "configFingerprint": "73a6188c1e47c0f8abfd0023af334f6d1dc0fd442c81c2d9c0ffd640697ef6ed",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 7,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 179
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 74,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0.5188813250428816,
+            "y": 0.5143961352657005
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 25,
+        "renderMode": "dots",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 60,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 40
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "e2cdbe79-14ab-461c-aa5f-23538e443e9f",
+      "slug": "ascii-e2cdbe79-14ab-461c-aa5f-23538e443e9f",
+      "name": "Ascii",
+      "author": "Fawaz",
+      "publishedAt": "$D2026-08-26T18:32:02.453Z",
+      "bookmarksCount": 9,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/ascii-e2cdbe79-14ab-461c-aa5f-23538e443e9f",
+      "publishedComponentPath": "/@notcoolmortal/components/ascii",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3Hx4OOe3A5PiN981taQjqkaCN7s/93b123cb-79bc-4953-b60a-7aa30a34e588.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3Hx4OOe3A5PiN981taQjqkaCN7s/88530d23-3061-45bf-8843-81f07763bdc0.mp4",
+      "configFingerprint": "e1e70d59a7fa63bf662db3b67f63ea70a6f108497fcad1e743fedc4d3e0063a3",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "rectangle",
+          "invert": true,
+          "shapes": [
+            {
+              "h": 0.7541371158392435,
+              "w": 0.5307328605200946,
+              "x": 0.2553191489361702,
+              "y": 0.09929078014184398,
+              "id": "ecee39ec-cd0f-480b-a42b-b279eb026e55",
+              "type": "rectangle"
+            }
+          ],
+          "dataUrl": "https://assets.21st.dev/ascii-recipes/masks/user_3Hx4OOe3A5PiN981taQjqkaCN7s/fde666fb-7070-4a39-be20-3e1fb4185cd0.png",
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#d8b46a",
+        "bgBlur": 12,
+        "bgMode": "none",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 24,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 9,
+        "contrast": 100,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 80
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0.28,
+            "y": 0.14
+          },
+          {
+            "x": 0.72,
+            "y": 0.86
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 100,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "977d0c6f-e45f-4c52-b013-7609e470f37d",
+      "slug": "ascii-clouds-977d0c6f-e45f-4c52-b013-7609e470f37d",
+      "name": "Ascii Clouds",
+      "author": "Sartaj Siddiqui",
+      "publishedAt": "$D2026-09-06T04:56:05.037Z",
+      "bookmarksCount": 2,
+      "tags": [
+        {
+          "name": "Animated",
+          "slug": "animated"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/ascii-clouds-977d0c6f-e45f-4c52-b013-7609e470f37d",
+      "publishedComponentPath": "/@seansiddiki/components/ascii-clouds",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3DAqNduPV8FZGsQ5d8pXRGO0VGG/9445efb4-2dca-4ae3-aa14-fce5f0c1acd7.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3DAqNduPV8FZGsQ5d8pXRGO0VGG/3bd73b5f-aa77-44d1-9181-f4576fe25130.mp4",
+      "configFingerprint": "35dc5b528adc82d288aca1988d9cc3d9e40ca1c42898709691ce04f9805e5768",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 60
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 2,
+        "bgMode": "original",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "matrix",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 15,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "wave",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "characters",
+        "saturation": 100,
+        "styleBlend": "color-dodge",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 32,
+        "edgeEmphasis": 0,
+        "overlayBlend": "saturation",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "a56a9c25-6f58-4951-ba16-15e46995a526",
+      "slug": "asher-ascii-a56a9c25-6f58-4951-ba16-15e46995a526",
+      "name": "Asher Ascii",
+      "author": "Inferno Services",
+      "publishedAt": "$D2026-08-28T21:35:04.400Z",
+      "bookmarksCount": 0,
+      "tags": [
+        {
+          "name": "Crt",
+          "slug": "crt"
+        },
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/asher-ascii-a56a9c25-6f58-4951-ba16-15e46995a526",
+      "publishedComponentPath": "/@asherevolved/components/asher-ascii",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_30Z4TAnxZmHEKqc0zKYuo9vexqg/337ec0ab-bfdb-4bdf-8104-f410c69706d3.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_30Z4TAnxZmHEKqc0zKYuo9vexqg/412ff887-7fe9-4f07-b942-6d2956bddd0d.mp4",
+      "configFingerprint": "3e5aff67b27fd775fca11aeba00da61ef4c8c68a08e3c2c8db14b482a6ff06d9",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#ff4824",
+        "bgBlur": 1,
+        "bgMode": "blur",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 24,
+        "contrast": 115,
+        "coverage": 81,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 53,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "pixel",
+        "saturation": 100,
+        "styleBlend": "color-dodge",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 75,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "06adfde3-69d4-40cd-8273-1b58b22a6e82",
+      "slug": "asherascii-06adfde3-69d4-40cd-8273-1b58b22a6e82",
+      "name": "AsherAscii",
+      "author": "Inferno Services",
+      "publishedAt": "$D2026-08-28T21:36:33.970Z",
+      "bookmarksCount": 0,
+      "tags": [
+        {
+          "name": "Mosaic",
+          "slug": "mosaic"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/asherascii-06adfde3-69d4-40cd-8273-1b58b22a6e82",
+      "publishedComponentPath": "/@asherevolved/components/asherascii",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_30Z4TAnxZmHEKqc0zKYuo9vexqg/cd099a8e-054e-441e-92f2-cbd87c1b218e.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_30Z4TAnxZmHEKqc0zKYuo9vexqg/dc670c58-19bb-41b6-bbdd-bde51e0fb792.mp4",
+      "configFingerprint": "3e5aff67b27fd775fca11aeba00da61ef4c8c68a08e3c2c8db14b482a6ff06d9",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#ff4824",
+        "bgBlur": 1,
+        "bgMode": "blur",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 24,
+        "contrast": 115,
+        "coverage": 81,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 53,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "pixel",
+        "saturation": 100,
+        "styleBlend": "color-dodge",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 75,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "760fc3a8-588b-41bb-ba94-13ebc3e69f31",
+      "slug": "asthetic-760fc3a8-588b-41bb-ba94-13ebc3e69f31",
+      "name": "Asthetic",
+      "author": "Saad",
+      "publishedAt": "$D2026-08-21T19:52:53.175Z",
+      "bookmarksCount": 33,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/asthetic-760fc3a8-588b-41bb-ba94-13ebc3e69f31",
+      "publishedComponentPath": "/@fatemayeasmin311/components/asthetic",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3I8QRgdp7zi7Xf4OJ7kQvS751Nn/92dbb983-c391-47d6-b9fe-fd341ce3a291.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3I8QRgdp7zi7Xf4OJ7kQvS751Nn/8c29b54c-cc32-44d2-aa79-d76e0265e080.mp4",
+      "configFingerprint": "8a154c6623e4261cf963488fc9d0568f3109c4e359fd4c518b7b7b8ec044dcd5",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 0,
+        "bgMode": "blur",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 11,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "wave",
+        "bgOpacity": 40,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 12,
+        "renderMode": "matrix",
+        "saturation": 100,
+        "styleBlend": "lighter",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "8c325708-c70c-4c68-b396-c27249d01bfb",
+      "slug": "back-8c325708-c70c-4c68-b396-c27249d01bfb",
+      "name": "Back",
+      "author": "Vinícius",
+      "publishedAt": "$D2026-08-25T01:28:43.217Z",
+      "bookmarksCount": 7,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/back-8c325708-c70c-4c68-b396-c27249d01bfb",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3INxFWlcc2FQxC8qP5bGHHFXtsQ/a4b02591-ec7c-4a3a-beaa-79569fbd7e7a.webp",
+      "videoUrl": null,
+      "configFingerprint": "3915b492dd9bf51d04b1c2c6fc1781def7ebab2be6f07a98496cd726e7686727",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [
+            {
+              "x": 0.6607963246554365,
+              "y": 0.3490241102181401,
+              "radius": 30,
+              "intensity": 80
+            },
+            {
+              "x": 0.1294027565084227,
+              "y": 0.6257175660160735,
+              "radius": 30,
+              "intensity": 80
+            }
+          ],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 42,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 13,
+        "contrast": -62,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "ripple",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 100,
+        "renderMode": "characters",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 100,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "f99c43be-fa3c-431c-b131-17aba6531d0b",
+      "slug": "bmw-art-f99c43be-fa3c-431c-b131-17aba6531d0b",
+      "name": "bmw-art",
+      "author": "Matheus Martins",
+      "publishedAt": "$D2026-08-20T22:54:31.401Z",
+      "bookmarksCount": 2,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/bmw-art-f99c43be-fa3c-431c-b131-17aba6531d0b",
+      "publishedComponentPath": "/@matheusmartinsviana/components/bmw-art",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3AMtxAFlBJHwJFz6TtJ49qTpHV7/3cf5ca29-cb92-4fd2-85bf-5cb513751506.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3AMtxAFlBJHwJFz6TtJ49qTpHV7/0fbc675f-48d1-4d2f-933e-59a99a68fa25.mp4",
+      "configFingerprint": "f0bd96d504f66238b23eb6cb429cc97b9962444c2466796fc01455865c797865",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "halfblocks",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "1e900c5a-f23f-4f1e-8f63-ef055ba5eb11",
+      "slug": "crab-1e900c5a-f23f-4f1e-8f63-ef055ba5eb11",
+      "name": "crab",
+      "author": "crab",
+      "publishedAt": "$D2026-08-20T17:47:05.130Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/crab-1e900c5a-f23f-4f1e-8f63-ef055ba5eb11",
+      "publishedComponentPath": "/@urata.junpei/components/crab-2",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IBpKFZKpAjsTVkip9JVUOnrcZl/42a4d0ce-7a62-4067-80c9-d086fd1d4da8.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IBpKFZKpAjsTVkip9JVUOnrcZl/eb43c6a3-a597-4618-8137-ed3a0ccd9708.mp4",
+      "configFingerprint": "f755e82efc0482522f8198e0acc3948ee471e6ba0077a06ac2a224d9e6224340",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 90
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 0,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 12,
+        "renderMode": "cross",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 54
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "6761deac-1bc5-44f9-aef9-1963891bfb5a",
+      "slug": "deepan-and-parichay-6761deac-1bc5-44f9-aef9-1963891bfb5a",
+      "name": "deepan and parichay",
+      "author": "Parichay Prabhu",
+      "publishedAt": "$D2026-08-27T06:34:20.301Z",
+      "bookmarksCount": 1,
+      "tags": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/deepan-and-parichay-6761deac-1bc5-44f9-aef9-1963891bfb5a",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3AbVHKadWLOzg8oK1mZMq0WdXOP/87b54d2e-c789-48f7-b9ab-84b9a4b4f78d.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3AbVHKadWLOzg8oK1mZMq0WdXOP/0679c489-ad36-4f6a-a898-1daa384625f0.mp4",
+      "configFingerprint": "b8e848615171c1b6057e6e05c2c10ab2553e13344c522f344e9454463cfb61b0",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 11,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dots",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "be6cf2a3-537b-4deb-9c1a-743275dc7861",
+      "slug": "demo-be6cf2a3-537b-4deb-9c1a-743275dc7861",
+      "name": "Demo",
+      "author": "Men Mengleap",
+      "publishedAt": "$D2026-08-31T09:54:40.699Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/demo-be6cf2a3-537b-4deb-9c1a-743275dc7861",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3EzUNUrlMvYtWEAak0f2qH3ncwp/627d7ffe-9008-4413-a82f-01137d83db83.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3EzUNUrlMvYtWEAak0f2qH3ncwp/44a2b596-ef47-4071-a433-f7be0cdb25b0.mp4",
+      "configFingerprint": "596e6b57547db9a89006635f26205300810b25a956c1199798d36ba00e65ec25",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 22
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#ff3cac",
+        "bgBlur": 12,
+        "bgMode": "blur",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 16,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "wave",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "halfblocks",
+        "saturation": 100,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 32,
+        "edgeEmphasis": 0,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "4bf668b8-8a0f-48f3-af98-663990462d9d",
+      "slug": "dither-art-4bf668b8-8a0f-48f3-af98-663990462d9d",
+      "name": "Dither Art",
+      "author": "Andre Heng",
+      "publishedAt": "$D2026-08-25T00:14:17.663Z",
+      "bookmarksCount": 2,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/dither-art-4bf668b8-8a0f-48f3-af98-663990462d9d",
+      "publishedComponentPath": "/@andrehzh/components/dither-art",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3FtGtt8tPJzeStRvUhBVTUY2i6o/b1bdc7d2-5417-4301-bd18-dabf59db9105.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3FtGtt8tPJzeStRvUhBVTUY2i6o/6b68bcae-1cbe-4f3c-bbed-3ad588d39125.mp4",
+      "configFingerprint": "4b944585d9ced093d080899292141f26cf86348543ea4f44fb2fa57310fa96f7",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "rectangle",
+          "invert": true,
+          "shapes": [
+            {
+              "h": 0.7541371158392435,
+              "w": 0.5307328605200946,
+              "x": 0.2553191489361702,
+              "y": 0.09929078014184398,
+              "id": "ecee39ec-cd0f-480b-a42b-b279eb026e55",
+              "type": "rectangle"
+            }
+          ],
+          "dataUrl": "https://assets.21st.dev/ascii-recipes/masks/user_3FtGtt8tPJzeStRvUhBVTUY2i6o/1edd379f-4914-4142-97ca-0a49439bb695.png",
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#d8b46a",
+        "bgBlur": 12,
+        "bgMode": "none",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 24,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 9,
+        "contrast": 100,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 64
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0.28,
+            "y": 0.14
+          },
+          {
+            "x": 0.72,
+            "y": 0.86
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 100,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 10
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "ff65e9f2-c2ec-443a-a146-45a4b460d8a7",
+      "slug": "dither-effect-ff65e9f2-c2ec-443a-a146-45a4b460d8a7",
+      "name": "Dither Effect",
+      "author": "Andre Heng",
+      "publishedAt": "$D2026-08-25T00:16:03.053Z",
+      "bookmarksCount": 10,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/dither-effect-ff65e9f2-c2ec-443a-a146-45a4b460d8a7",
+      "publishedComponentPath": "/@andrehzh/components/dither-effect",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3FtGtt8tPJzeStRvUhBVTUY2i6o/9a960ef5-85a1-4aff-826e-8fc8319bd173.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3FtGtt8tPJzeStRvUhBVTUY2i6o/b9370f4d-c39e-4b6c-94b8-ec33269590b1.mp4",
+      "configFingerprint": "6a271f8bf366bebf2f97ffe04658fbc567bd4c0cd115b241f9ec7a8eb322ae98",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "rectangle",
+          "invert": true,
+          "shapes": [
+            {
+              "h": 0.7541371158392435,
+              "w": 0.5307328605200946,
+              "x": 0.2553191489361702,
+              "y": 0.09929078014184398,
+              "id": "ecee39ec-cd0f-480b-a42b-b279eb026e55",
+              "type": "rectangle"
+            }
+          ],
+          "dataUrl": "https://assets.21st.dev/ascii-recipes/masks/user_3FtGtt8tPJzeStRvUhBVTUY2i6o/721a9856-87d0-46f4-aa4b-9b03788c2df8.png",
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#d8b46a",
+        "bgBlur": 12,
+        "bgMode": "none",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 24,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 9,
+        "contrast": 100,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 80
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 0.28,
+            "y": 0.14
+          },
+          {
+            "x": 0.72,
+            "y": 0.86
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 100,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 30
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "86889966-dff2-4c3a-9a76-eaa5772f28ef",
+      "slug": "drew-86889966-dff2-4c3a-9a76-eaa5772f28ef",
+      "name": "DREW",
+      "author": "Drew Clarence Basadre",
+      "publishedAt": "$D2026-09-07T20:10:04.792Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/drew-86889966-dff2-4c3a-9a76-eaa5772f28ef",
+      "publishedComponentPath": "/@drewbasadre/components/drew",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IzVGsR1xhTvq2dg2XAWWRN83b4/b74823a1-158f-4d40-80da-72452c45aac0.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IzVGsR1xhTvq2dg2XAWWRN83b4/ee28d0c2-dc6d-4cf4-bbcd-04f7f3c77339.mp4",
+      "configFingerprint": "e34c03f49502272bd537babd098766ce6a023d87ab0e58f838aaca7d190ced15",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "voxel",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "f1ea2bba-82a5-416f-b104-ac69f378b4ee",
+      "slug": "ennidi-mask-f1ea2bba-82a5-416f-b104-ac69f378b4ee",
+      "name": "Ennidi mask",
+      "author": "ben",
+      "publishedAt": "$D2026-09-05T18:16:59.478Z",
+      "bookmarksCount": 1,
+      "tags": [
+        {
+          "name": "Pixel",
+          "slug": "pixel"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/ennidi-mask-f1ea2bba-82a5-416f-b104-ac69f378b4ee",
+      "publishedComponentPath": "/@bjasper2001/components/ennidi-mask",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3INLbRxtrIShKWPSpHBMufjTKKf/00793767-0e61-4003-9998-5beb5987e7ad.png",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3INLbRxtrIShKWPSpHBMufjTKKf/1b875ab5-9275-45bd-b690-9de85c77846d.mp4",
+      "configFingerprint": "5c6dfcef736ac4f1c575c7c92678f60df0cc31aabb689f34b05cc91f88a458ab",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#111346",
+        "bgBlur": 30,
+        "bgMode": "solid",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 5,
+        "contrast": -67,
+        "coverage": 48,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 31,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 66,
+        "renderMode": "contour",
+        "saturation": 100,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "4d2f555b-348f-4cdc-b4e7-ae8e787daca1",
+      "slug": "flacoroque-4d2f555b-348f-4cdc-b4e7-ae8e787daca1",
+      "name": "FLACOROQUE",
+      "author": "Gabriel",
+      "publishedAt": "$D2026-08-31T22:53:26.408Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/flacoroque-4d2f555b-348f-4cdc-b4e7-ae8e787daca1",
+      "publishedComponentPath": "/@heatupsolucoes/components/flacoroque",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3HQahdVdEJuG9L9afn8wGBlEevR/a008703d-217b-4dd8-8943-4b16a84ca63a.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3HQahdVdEJuG9L9afn8wGBlEevR/5dfc036d-bd4f-4eaf-8b14-6b02da4f5d6e.mp4",
+      "configFingerprint": "614964d0f2c7b06577652a3bc849518c7556b45e39a8e3503b20391474cbe9e6",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "matrix",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 13,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "characters",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "1go4ufd68ıkjnpıf679ım#",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "9e12d73a-ff0f-4c83-b6e6-3c50e9255d2f",
+      "slug": "flower-9e12d73a-ff0f-4c83-b6e6-3c50e9255d2f",
+      "name": "flower",
+      "author": "Vlad Vovk",
+      "publishedAt": "$D2026-08-24T13:25:01.305Z",
+      "bookmarksCount": 2,
+      "tags": [
+        {
+          "name": "Monochrome",
+          "slug": "monochrome"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/flower-9e12d73a-ff0f-4c83-b6e6-3c50e9255d2f",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_39720J8FZrHCoGeL23ljF4x20L3/fdad1d36-9d07-48a2-926e-d91c131b6979.webp",
+      "videoUrl": null,
+      "configFingerprint": "05ddda87d06c1b6e99672caaba136e8c67f0cb3b94f1bfaf01189402e1581faf",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 45
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 0
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 100
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#ff8a3d",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "matrix",
+        "density": 0,
+        "animated": false,
+        "blurType": "off",
+        "cellSize": 13,
+        "contrast": 4,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "pulse",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 100,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 70,
+        "renderMode": "characters",
+        "saturation": 0,
+        "styleBlend": "screen",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "b8b9d979-f9bf-4d40-bf1e-52a3011694d0",
+      "slug": "hsbm01-b8b9d979-f9bf-4d40-bf1e-52a3011694d0",
+      "name": "HSBM01",
+      "author": "Adrian Henderson",
+      "publishedAt": "$D2026-08-22T07:08:06.984Z",
+      "bookmarksCount": 2,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/hsbm01-b8b9d979-f9bf-4d40-bf1e-52a3011694d0",
+      "publishedComponentPath": "/@adrian_3e13d56e/components/hsbm01",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IG2Io0rsXtUuIzS2n9dzDJkvYo/48c59314-9171-477d-a089-3ed4526eb124.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IG2Io0rsXtUuIzS2n9dzDJkvYo/24308d29-0eb6-440f-8ad6-8d7f39f2eba8.mp4",
+      "configFingerprint": "0ed0161d55b298e9e8be2f6191d9fae006073610e6fe5d88490606eb1f9f6721",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#111346",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 18,
+        "contrast": 100,
+        "coverage": 48,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 89,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "437659e1-1ab3-4d9c-bf43-4abf80f37f2a",
+      "slug": "i-437659e1-1ab3-4d9c-bf43-4abf80f37f2a",
+      "name": "i",
+      "author": "Lucien",
+      "publishedAt": "$D2026-08-28T21:49:23.616Z",
+      "bookmarksCount": 4,
+      "tags": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/i-437659e1-1ab3-4d9c-bf43-4abf80f37f2a",
+      "publishedComponentPath": "/@kahidiscordgfx/components/i-ascii",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IW6HlntCji0XlisdUV6Clh71Lz/f3d56771-6902-4972-afce-3a4de6eb19e3.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IW6HlntCji0XlisdUV6Clh71Lz/ced8351b-7a50-4a7d-b6b0-386dac854e31.mp4",
+      "configFingerprint": "c9be0f6db0ec4d57f80c486ed8cdf403afcfe447d98df21057593563a4de87c9",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#000000",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 14,
+        "contrast": 115,
+        "coverage": 96,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "a4cbb8ce-bd24-4792-b02f-38e527cd8dee",
+      "slug": "igaming-a4cbb8ce-bd24-4792-b02f-38e527cd8dee",
+      "name": "Igaming",
+      "author": "Harutyun Nahapetyan",
+      "publishedAt": "$D2026-08-30T10:20:11.044Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/igaming-a4cbb8ce-bd24-4792-b02f-38e527cd8dee",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3GAroirCEU7zMUanuQUMQET2Bkj/62c6ef13-ded1-480e-8f23-b20b318e7a39.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3GAroirCEU7zMUanuQUMQET2Bkj/4a1470f6-36af-473a-b689-46521e747948.mp4",
+      "configFingerprint": "56d7750f747cc727e59d139becfec306b9a06f588513a9dc28b881dcc4c1a123",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#0022ff",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 16,
+        "contrast": 115,
+        "coverage": 89,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0.6179468599033817
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "pixel",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 100,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "e635cd2e-f85f-4310-b10d-0454abbeb656",
+      "slug": "igaming-e635cd2e-f85f-4310-b10d-0454abbeb656",
+      "name": "Igaming",
+      "author": "Harutyun Nahapetyan",
+      "publishedAt": "$D2026-08-30T09:50:10.720Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/igaming-e635cd2e-f85f-4310-b10d-0454abbeb656",
+      "publishedComponentPath": "/@nahapetyanhk/components/igaming",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3GAroirCEU7zMUanuQUMQET2Bkj/8ba8b356-6cdf-4f59-a9a4-fd9d53ccc8a2.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3GAroirCEU7zMUanuQUMQET2Bkj/2d53c970-6433-460f-8841-08710a004aa4.mp4",
+      "configFingerprint": "29d6373aa8c9bf361986e74cbfa91a91d2b8e915c3e44639c1c0654773bafaf7",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#ffffff",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 89,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "pixel",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 25,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "95559677-f8d2-4ad5-842b-bb9784a9c7b0",
+      "slug": "igaming-final-95559677-f8d2-4ad5-842b-bb9784a9c7b0",
+      "name": "Igaming_final",
+      "author": "Harutyun Nahapetyan",
+      "publishedAt": "$D2026-09-02T10:33:12.530Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/igaming-final-95559677-f8d2-4ad5-842b-bb9784a9c7b0",
+      "publishedComponentPath": "/@nahapetyanhk/components/igaming-final",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3GAroirCEU7zMUanuQUMQET2Bkj/917c0679-cf55-4c1e-8803-b99f33afc096.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3GAroirCEU7zMUanuQUMQET2Bkj/bac85d18-0a08-4192-afcc-be20c5ed7460.mp4",
+      "configFingerprint": "0e989e7116d4ba680f45ed5af27d9f704703845369c177f49137c5d30b728091",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#0e00ce",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 7,
+        "contrast": 115,
+        "coverage": 90,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 60,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": -94,
+        "renderMode": "lego",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 69,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "fc33c888-2a99-45ab-8976-b3713d5a93b2",
+      "slug": "jesus-post-fc33c888-2a99-45ab-8976-b3713d5a93b2",
+      "name": "jesus post",
+      "author": "Michelle Gomes",
+      "publishedAt": "$D2026-09-06T17:28:08.494Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/jesus-post-fc33c888-2a99-45ab-8976-b3713d5a93b2",
+      "publishedComponentPath": "/@michellegomes1984.mg/components/jesus-post",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IxmIg8YxRrgo3ncioPxBYV01Jh/9282fdfc-1fee-4ce0-a12b-85af45cc77ff.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IxmIg8YxRrgo3ncioPxBYV01Jh/b9315de0-910e-4bc9-a5db-10918b8a2ace.mp4",
+      "configFingerprint": "33d279c8cbf08f0f534c9b1b885521735739375f4c1e7f875a10ef29710e42d0",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 58
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 32
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 0,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [
+            {
+              "x": 0.3,
+              "y": 0.5,
+              "radius": 5,
+              "intensity": 81
+            }
+          ],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "tilt",
+        "cellSize": 10,
+        "contrast": 64,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 76
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 30,
+        "brightness": 0,
+        "renderMode": "characters",
+        "saturation": 105,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 20,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 44
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "6c6d2fa3-7f25-4365-a058-60475bb0248e",
+      "slug": "jjanaj-6c6d2fa3-7f25-4365-a058-60475bb0248e",
+      "name": "jjanaj",
+      "author": "byer",
+      "publishedAt": "$D2026-09-08T02:44:33.710Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/jjanaj-6c6d2fa3-7f25-4365-a058-60475bb0248e",
+      "publishedComponentPath": "/@prozinhoo0o17/components/jjanaj",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IjFbd2OjAg1lNjJkANJ57fUf5X/02cc9143-779d-405b-93dd-77dbf48d81d1.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IjFbd2OjAg1lNjJkANJ57fUf5X/1711b386-90ee-46b1-ab32-3c25a76098c3.mp4",
+      "configFingerprint": "2e0d7fdaf85e06c8fa5c404852050515afa93abd95bf867d6dabb57292c33edc",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": false,
+            "intensity": 58
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 32
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "rectangle",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": "https://assets.21st.dev/ascii-recipes/masks/user_3IjFbd2OjAg1lNjJkANJ57fUf5X/38015dfb-4720-4906-a673-fbdf039e498f.png",
+          "enabled": true,
+          "brushSize": 85,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 0,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "tilt",
+        "cellSize": 10,
+        "contrast": 128,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 100,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 30,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 0,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "f2f5b946-a02b-402a-9449-ce2f70a7d206",
+      "slug": "k-f2f5b946-a02b-402a-9449-ce2f70a7d206",
+      "name": "k",
+      "author": "Arda Anıl BOZKURT",
+      "publishedAt": "$D2026-09-04T04:47:43.212Z",
+      "bookmarksCount": 2,
+      "tags": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/k-f2f5b946-a02b-402a-9449-ce2f70a7d206",
+      "publishedComponentPath": "/@pixajans06/components/k-ascii",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IqcrzbWYl02cSVl55gOEC9prEa/5e915177-2c3c-4fda-931f-9450953bf66d.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IqcrzbWYl02cSVl55gOEC9prEa/08df8d2d-2bfe-4335-82ea-ac93ad3a7be9.mp4",
+      "configFingerprint": "360ce936fa13435ab090bd01c06808ef92d4253226b71646278fc4366d2b44f7",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#0e00ce",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 7,
+        "contrast": 115,
+        "coverage": 90,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "shimmer",
+        "bgOpacity": 60,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "sourceUrl": "/ascii-editor/demos/generated/ref-015.webp",
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": -94,
+        "renderMode": "lego",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 69,
+        "edgeEmphasis": 0,
+        "overlayBlend": "soft-light",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "3217f07f-897d-4f60-9f16-c1e82efd4e7f",
+      "slug": "mimir-3217f07f-897d-4f60-9f16-c1e82efd4e7f",
+      "name": "mimir",
+      "author": "Bikram Singh",
+      "publishedAt": "$D2026-08-22T13:33:44.942Z",
+      "bookmarksCount": 6,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/mimir-3217f07f-897d-4f60-9f16-c1e82efd4e7f",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_32EZSuNOuMq3QkDGOTDUzW05asv/4b2abfbe-be12-4fd9-9885-06e82643d24c.webp",
+      "videoUrl": null,
+      "configFingerprint": "b7c48bade7a1f5d08d13a57f08d85a25a605d2035c5c72830c64fad4440f3aa5",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 13,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 98
+        },
+        "animStyle": "ripple",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 12,
+        "renderMode": "mosaic",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "83906fcf-c32d-45fc-bcbd-221daf8672ad",
+      "slug": "ocean-perk-83906fcf-c32d-45fc-bcbd-221daf8672ad",
+      "name": "ocean-perk",
+      "author": "sdasda",
+      "publishedAt": "$D2026-09-07T17:08:46.970Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/ocean-perk-83906fcf-c32d-45fc-bcbd-221daf8672ad",
+      "publishedComponentPath": "/@kingmckay13/components/ocean-perk",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3HK6KYaDR69q1pGCGjqg12XEqUK/ced5ff18-d765-456e-b025-f036dd57594b.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3HK6KYaDR69q1pGCGjqg12XEqUK/67f11ad1-8c39-43cd-aac7-9cd86a40da0b.mp4",
+      "configFingerprint": "5cdc863997b946dc2557aba9da5f3661e7874ebd3b4409bf16c6a060ae104624",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 14,
+        "contrast": 115,
+        "coverage": 96,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 89,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "2c0a734c-7549-4d79-9931-88a92ac86cdb",
+      "slug": "pyramid-2c0a734c-7549-4d79-9931-88a92ac86cdb",
+      "name": "Pyramid",
+      "author": "Josh",
+      "publishedAt": "$D2026-09-08T11:44:04.551Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/pyramid-2c0a734c-7549-4d79-9931-88a92ac86cdb",
+      "publishedComponentPath": "/@joshua_92339a6f/components/pyramid",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3Isixx4myYYJg0m5sgMC8PItPfT/42c9c357-f9e8-458f-89dd-1894332a377f.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3Isixx4myYYJg0m5sgMC8PItPfT/397cdf2a-88e7-452e-9eb6-09260fb1a1b7.mp4",
+      "configFingerprint": "78da607809eb9ab31085ee53fc181ffb87171e0e1c79716fb7e1dbb3598ce6d9",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 90,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "halfblocks",
+        "saturation": 100,
+        "styleBlend": "color-dodge",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "f7cd7a74-62cb-466f-aa93-97d60a4909eb",
+      "slug": "random-f7cd7a74-62cb-466f-aa93-97d60a4909eb",
+      "name": "random",
+      "author": "Demon Strikk",
+      "publishedAt": "$D2026-09-06T10:06:18.282Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/random-f7cd7a74-62cb-466f-aa93-97d60a4909eb",
+      "publishedComponentPath": "/@demonstrikk/components/random",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_39cJU9MlvZ7lFFhLnpeSXY2H9Fc/41868373-c34d-4fee-a20c-0c71b9613a4d.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_39cJU9MlvZ7lFFhLnpeSXY2H9Fc/843767e1-bb68-4b40-9a91-f4a646027cbd.mp4",
+      "configFingerprint": "cc5a7b10af0699a48efdc0ef0f504ead618d3c1076ec09b8d3b8b022f7d239e1",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#111346",
+        "bgBlur": 30,
+        "bgMode": "solid",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 5,
+        "contrast": -67,
+        "coverage": 48,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 31,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "sourceUrl": "/ascii-editor/demos/generated/ref-013.webp",
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 66,
+        "renderMode": "contour",
+        "saturation": 100,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "149cdc4b-068a-42af-b702-9d0083406d43",
+      "slug": "retropc-149cdc4b-068a-42af-b702-9d0083406d43",
+      "name": "retropc",
+      "author": "GRID",
+      "publishedAt": "$D2026-08-23T02:19:38.211Z",
+      "bookmarksCount": 9,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/retropc-149cdc4b-068a-42af-b702-9d0083406d43",
+      "publishedComponentPath": "/@gridai.team/components/retropc",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3DBVq4aGqmfpi1yY5EHP5GIlT5f/1f6f0d33-2f18-4b5f-9374-7e7ff1d89b81.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3DBVq4aGqmfpi1yY5EHP5GIlT5f/0c7267c7-83c3-4e55-b2d3-92e70d9438a2.mp4",
+      "configFingerprint": "8668bd8e751581fcf136e0e5f52b7cb54919013ea8070deb9c32cc0e5ace4406",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 72
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 11,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 9,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "lego",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "8ee70cfc-aab6-41c0-90d8-f6bf6b3d5c9f",
+      "slug": "seve-8ee70cfc-aab6-41c0-90d8-f6bf6b3d5c9f",
+      "name": "seve",
+      "author": "ahmet",
+      "publishedAt": "$D2026-08-30T10:53:17.275Z",
+      "bookmarksCount": 2,
+      "tags": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/seve-8ee70cfc-aab6-41c0-90d8-f6bf6b3d5c9f",
+      "publishedComponentPath": "/@makif.gozum/components/seve",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IYMXN5a1CTrHtSuea741NTrlOC/07ed1f64-931a-447b-ada3-283bddb24ca9.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IYMXN5a1CTrHtSuea741NTrlOC/67c47291-8e9a-4493-a10a-529c52052f3b.mp4",
+      "configFingerprint": "614964d0f2c7b06577652a3bc849518c7556b45e39a8e3503b20391474cbe9e6",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "matrix",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 13,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "characters",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "1go4ufd68ıkjnpıf679ım#",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "1dbb2a63-3252-4484-b369-69a2396d9405",
+      "slug": "star-pixel-1dbb2a63-3252-4484-b369-69a2396d9405",
+      "name": "Star Pixel",
+      "author": "Charles",
+      "publishedAt": "$D2026-09-01T17:02:46.623Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/star-pixel-1dbb2a63-3252-4484-b369-69a2396d9405",
+      "publishedComponentPath": "/@charl3x/components/star-pixel",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_2tq52u8PbE3so9K0NqiNxb4ASkm/07a6ae82-919b-4ea1-9dea-71787be391ba.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_2tq52u8PbE3so9K0NqiNxb4ASkm/6d27154c-49b6-4905-af19-cb517c53d44f.mp4",
+      "configFingerprint": "c4e486f76c602d27aa719293c9b90b50225f24a7a3371ce0110ea8ca37265c83",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": false,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": "https://assets.21st.dev/ascii-recipes/masks/user_2tq52u8PbE3so9K0NqiNxb4ASkm/9e23480d-0c11-4616-bcd5-80d74d26ce48.png",
+          "enabled": true,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#1e6fff",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": true
+        },
+        "charSet": "standard",
+        "density": 27,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 3,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 71,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          },
+          {
+            "x": 0.5671579682130584,
+            "y": 0.8316395663956639
+          },
+          {
+            "x": 0.1591629080756014,
+            "y": 0.4104723190089044
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": -16,
+        "renderMode": "hexagons",
+        "saturation": 157,
+        "styleBlend": "screen",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 92,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "11a4ce4e-bfc3-4b2b-819c-1c655679abec",
+      "slug": "stealth-11a4ce4e-bfc3-4b2b-819c-1c655679abec",
+      "name": "Stealth",
+      "author": "ezpz ZC",
+      "publishedAt": "$D2026-08-27T03:59:30.493Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/stealth-11a4ce4e-bfc3-4b2b-819c-1c655679abec",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_2y4mAmG5WMonwhwjqKc8LyeecUz/b817b3ea-b197-445f-a810-ae0dd4903c43.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_2y4mAmG5WMonwhwjqKc8LyeecUz/60a15310-4864-4bd6-be02-0e138cfe57d2.mp4",
+      "configFingerprint": "ca211e0b60532a3c68e3a4e9e17749be84ae8c707d22bc708379c192e01df5a3",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 45
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 55
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#ff3b1f",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 10,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "pulse",
+        "bgOpacity": 100,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dots",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 32,
+        "edgeEmphasis": 0,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "2d4b1156-70eb-4f5d-87ed-33701bdc2277",
+      "slug": "surf-2d4b1156-70eb-4f5d-87ed-33701bdc2277",
+      "name": "Surf",
+      "author": "Võ Quốc Vương - ST23A",
+      "publishedAt": "$D2026-09-04T11:03:39.727Z",
+      "bookmarksCount": 1,
+      "tags": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/surf-2d4b1156-70eb-4f5d-87ed-33701bdc2277",
+      "publishedComponentPath": "/@vuong105701/components/surf",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3GJ8AqrnJWOdmBggnZwjxRlnhmy/a0ba29d2-7dbc-4271-8079-03def4170030.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3GJ8AqrnJWOdmBggnZwjxRlnhmy/cca1d825-d2c2-4698-920d-af26410ad6de.mp4",
+      "configFingerprint": "a079db33c6fb56bdfb978cc062012bbfba606d0e8c3e923ac482c8dd18660ff5",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#111346",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 18,
+        "contrast": 100,
+        "coverage": 48,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "1a8c8fb8-562d-473e-b360-c98c94606421",
+      "slug": "surf-bg-2-1a8c8fb8-562d-473e-b360-c98c94606421",
+      "name": "Surf BG 2",
+      "author": "Võ Quốc Vương - ST23A",
+      "publishedAt": "$D2026-09-04T11:13:59.817Z",
+      "bookmarksCount": 4,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/surf-bg-2-1a8c8fb8-562d-473e-b360-c98c94606421",
+      "publishedComponentPath": "/@vuong105701/components/surf-bg-2",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3GJ8AqrnJWOdmBggnZwjxRlnhmy/cc796f53-f2f0-482e-b866-adc0788c2c3c.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3GJ8AqrnJWOdmBggnZwjxRlnhmy/e99e47f8-0bcc-44a3-a45e-8f99bd16e2ca.mp4",
+      "configFingerprint": "4c0cbfe9cf471fc85dc5cc7c9fc69d6fd51572e30ba4e332ab9b59bf169b6730",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#111346",
+        "bgBlur": 30,
+        "bgMode": "original",
+        "invert": true,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 18,
+        "contrast": 100,
+        "coverage": 48,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "overlay",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "ecefd249-00a9-439d-831c-ffb7a94b9998",
+      "slug": "surfer-ecefd249-00a9-439d-831c-ffb7a94b9998",
+      "name": "surfer",
+      "author": "LEO NEVES",
+      "publishedAt": "$D2026-08-24T04:41:11.270Z",
+      "bookmarksCount": 0,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/surfer-ecefd249-00a9-439d-831c-ffb7a94b9998",
+      "publishedComponentPath": "/@leitosurf151/components/surfer",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3HX1XRzBRhdIPJrfET4goOprwEF/4fa129bd-c763-4f07-a02f-dd981a02a82c.png",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3HX1XRzBRhdIPJrfET4goOprwEF/2a916997-61a0-497e-97d9-69721745e14a.mp4",
+      "configFingerprint": "4e572260a99babc0c3091a21dc0b1928d1c3e2c871e699eb683dc793655ddb32",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "original",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 16,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "wave",
+        "bgOpacity": 22,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 12,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "61508782-7f0e-4e02-962f-13ef5d11ccce",
+      "slug": "test-61508782-7f0e-4e02-962f-13ef5d11ccce",
+      "name": "test",
+      "author": "TENKO",
+      "publishedAt": "$D2026-08-28T22:58:10.870Z",
+      "bookmarksCount": 1,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/test-61508782-7f0e-4e02-962f-13ef5d11ccce",
+      "publishedComponentPath": null,
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3G934TMWDHhP28RI3V4KrUz7kuQ/b0c6da3f-10f5-404d-be30-32eadacc3c91.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3G934TMWDHhP28RI3V4KrUz7kuQ/57d32ac2-e739-4afe-95d3-dcd13fcf79b0.mp4",
+      "configFingerprint": "f619af17dfae1f620ef73fbe80ef58ebd3d0dd8dad4b97b37f32f9863c6d680d",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#00ff66",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 14,
+        "contrast": 115,
+        "coverage": 96,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 82,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "dither",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "shaderSource": {
+          "hue": 0,
+          "blur": 0,
+          "seed": 1,
+          "warp": 0,
+          "zoom": 50,
+          "drift": 0,
+          "grain": 12,
+          "oklab": false,
+          "speed": 40,
+          "colors": [
+            "#031C26",
+            "#1B6CA8",
+            "#5AD2F4",
+            "#EAF9FF"
+          ],
+          "detail": 50,
+          "paramA": 50,
+          "preset": "waves",
+          "rotate": 0,
+          "offsetX": 0,
+          "offsetY": 0,
+          "variant": 0,
+          "animated": true,
+          "contrast": 45,
+          "vignette": 0,
+          "intensity": 55,
+          "brightness": 50,
+          "customCode": null,
+          "saturation": 50,
+          "cursorEffect": "swirl",
+          "cursorRadius": 50,
+          "motionReverse": false,
+          "mouseReactive": true,
+          "cursorStrength": 65
+        },
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "77893b71-4fa7-468d-9330-ba6298fdbec5",
+      "slug": "voxcoach-77893b71-4fa7-468d-9330-ba6298fdbec5",
+      "name": "voxcoach",
+      "author": "aryaan",
+      "publishedAt": "$D2026-08-27T13:21:08.371Z",
+      "bookmarksCount": 3,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/voxcoach-77893b71-4fa7-468d-9330-ba6298fdbec5",
+      "publishedComponentPath": "/@aryaanantarkar-byte/components/voxcoach",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3IV3EEx1KZYSIrYJJNibZ1qbaXF/ec9f2d26-d732-451c-bae0-c3961ad1b3d6.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3IV3EEx1KZYSIrYJJNibZ1qbaXF/22dcd30f-5986-403c-9792-ebea534fc9b7.mp4",
+      "configFingerprint": "54ace5387f5ca92423d18719fbe5553e95827b85fe90f4d8aeb7394d1d8939a2",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 25
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 16,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "wave",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "sourceUrl": "/ascii-editor/demos/generated/ref-003.webp",
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 12,
+        "renderMode": "pixel",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "638b978c-42b7-486d-b049-ba3e3dbaf115",
+      "slug": "ziidstudio-638b978c-42b7-486d-b049-ba3e3dbaf115",
+      "name": "ziidstudio",
+      "author": "ziid",
+      "publishedAt": "$D2026-08-25T14:49:53.133Z",
+      "bookmarksCount": 3,
+      "tags": [
+        {
+          "name": "Monochrome",
+          "slug": "monochrome"
+        }
+      ],
+      "sourceUrl": "https://21st.dev/community/ascii/ziidstudio-638b978c-42b7-486d-b049-ba3e3dbaf115",
+      "publishedComponentPath": "/@chettrinishal3/components/ziidstudio",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3Git8S6IUdHcR6dkDFTo8kq5BrY/ffe48bad-a3ec-4654-bb41-e4418f8f0324.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3Git8S6IUdHcR6dkDFTo8kq5BrY/d1944a7f-0510-40fc-bc6b-79fbaeee6826.mp4",
+      "configFingerprint": "59507fed8f6b2bf1f566750deee79fd81f67e0aa4e6199b9f4c27ac978a69b96",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 45
+          },
+          "glitch": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "filmGrain": {
+            "enabled": false,
+            "intensity": 30
+          },
+          "scanLines": {
+            "enabled": false,
+            "intensity": 40
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#3ca6ff",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "standard",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 18,
+        "contrast": 115,
+        "coverage": 100,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "pulse",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "braille",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 0,
+        "edgeEmphasis": 0,
+        "overlayBlend": "multiply",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    },
+    {
+      "id": "641821f9-075e-46a5-9771-0f2df8b8fc4f",
+      "slug": "recipe-641821f9-075e-46a5-9771-0f2df8b8fc4f",
+      "name": "фыв",
+      "author": "David",
+      "publishedAt": "$D2026-09-05T02:37:07.383Z",
+      "bookmarksCount": 2,
+      "tags": [],
+      "sourceUrl": "https://21st.dev/community/ascii/recipe-641821f9-075e-46a5-9771-0f2df8b8fc4f",
+      "publishedComponentPath": "/@nkkbrrpochta/components/ascii-641821f9",
+      "thumbnailUrl": "https://assets.21st.dev/ascii-recipes/thumbnails/user_3D2g6FYeqAqSi3o8hTcoqOW07p3/68e59bb2-d4a7-44ed-95aa-4ba48a5f95dd.webp",
+      "videoUrl": "https://assets.21st.dev/ascii-recipes/videos/user_3D2g6FYeqAqSi3o8hTcoqOW07p3/6af8fb8e-43b8-4984-abb4-a535f786f08c.mp4",
+      "configFingerprint": "8d3168ba03709329328080a13e1f540d7a99138faf6a5d1be581b744a834110e",
+      "config": {
+        "pfx": {
+          "bloom": {
+            "enabled": true,
+            "intensity": 60
+          },
+          "glitch": {
+            "enabled": true,
+            "intensity": 20
+          },
+          "filmDust": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "halftone": {
+            "enabled": false,
+            "intensity": 20
+          },
+          "pixelate": {
+            "enabled": false,
+            "intensity": 15
+          },
+          "vignette": {
+            "enabled": true,
+            "intensity": 38
+          },
+          "chromatic": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "filmGrain": {
+            "enabled": true,
+            "intensity": 40
+          },
+          "scanLines": {
+            "enabled": true,
+            "intensity": 28
+          }
+        },
+        "mask": {
+          "tool": "freehand",
+          "invert": false,
+          "shapes": [],
+          "dataUrl": null,
+          "enabled": false,
+          "brushSize": 30,
+          "showOverlay": false
+        },
+        "tint": "#1f2374",
+        "bgBlur": 12,
+        "bgMode": "solid",
+        "invert": false,
+        "lights": {
+          "points": [],
+          "enabled": false
+        },
+        "charSet": "binary",
+        "density": 0,
+        "animated": true,
+        "blurType": "off",
+        "cellSize": 14,
+        "contrast": 115,
+        "coverage": 96,
+        "animSpeed": {
+          "enabled": true,
+          "intensity": 100
+        },
+        "animStyle": "flicker",
+        "bgOpacity": 90,
+        "blurAngle": 0,
+        "grayscale": 0,
+        "lensFocus": 40,
+        "tiltFocus": 35,
+        "toneCurve": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "blurAmount": 35,
+        "brightness": 0,
+        "renderMode": "hearts",
+        "saturation": 100,
+        "styleBlend": "source-over",
+        "blurCenterX": 50,
+        "blurCenterY": 50,
+        "customChars": "",
+        "tiltFeather": 15,
+        "tintOpacity": 45,
+        "edgeEmphasis": 40,
+        "overlayBlend": "overlay",
+        "tiltPosition": 50,
+        "animIntensity": {
+          "enabled": true,
+          "intensity": 60
+        },
+        "progressiveReverse": false,
+        "progressivePosition": 55,
+        "directionalBothSides": false
+      }
+    }
+  ]
+}

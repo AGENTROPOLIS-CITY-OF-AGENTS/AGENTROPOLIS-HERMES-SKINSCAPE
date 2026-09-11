@@ -30,6 +30,9 @@ import {
   TranscriptPanel
 } from './panels.js'
 import { ActivityPulse, CommandComposer, StatusChip, type ChipTone } from './primitives.js'
+import { AsciiSignal, AsciiWordmark } from './ascii-visual.js'
+import { ALL_RENDER_MODES, COMMUNITY_RECIPES, DEFAULT_ASCII_CONFIG, findCommunityRecipe, normalizeRenderMode } from '../ascii/registry.js'
+import type { AsciiRecipeConfig } from '../ascii/types.js'
 import type { GatewayClient } from '../gateway/client.js'
 
 export interface CyberShellProps {
@@ -134,6 +137,14 @@ export function CyberShell({
   const [profile, setProfile] = useState<LayoutProfile>('command-center')
   const [input, setInput] = useState('')
   const [focusedPanel, setFocusedPanel] = useState<PanelKey | null>(null)
+  const [asciiVisual, setAsciiVisual] = useState(process.env.HERMES_ASCII_VISUAL !== '0')
+  const initialRecipe = findCommunityRecipe(process.env.HERMES_ASCII_RECIPE || '')
+  const [asciiRecipeIndex, setAsciiRecipeIndex] = useState(() => Math.max(0, initialRecipe ? COMMUNITY_RECIPES.indexOf(initialRecipe) : 0))
+  const [asciiOverride, setAsciiOverride] = useState<Partial<AsciiRecipeConfig>>(() => process.env.HERMES_ASCII_MODE
+    ? { renderMode: normalizeRenderMode(process.env.HERMES_ASCII_MODE) }
+    : {})
+  const asciiRecipe = COMMUNITY_RECIPES[asciiRecipeIndex]
+  const asciiConfig = { ...(asciiRecipe?.config ?? DEFAULT_ASCII_CONFIG), ...asciiOverride }
 
   const decision = decideLayout(cols, profile)
   const { left, right } = panelsForLayout(decision)
@@ -158,6 +169,38 @@ export function CyberShell({
       if (key.return) {
         const text = input.trim()
         setInput('')
+        if (text === '/ascii off') {
+          setAsciiVisual(false)
+          return
+        }
+        if (text === '/ascii on') {
+          setAsciiVisual(true)
+          return
+        }
+        if (text === '/ascii next' || text === '/ascii prev') {
+          const direction = text.endsWith('next') ? 1 : -1
+          setAsciiRecipeIndex((index) => (index + direction + COMMUNITY_RECIPES.length) % COMMUNITY_RECIPES.length)
+          setAsciiOverride({})
+          setAsciiVisual(true)
+          return
+        }
+        if (text.startsWith('/ascii recipe ')) {
+          const recipe = findCommunityRecipe(text.slice('/ascii recipe '.length))
+          if (recipe) {
+            setAsciiRecipeIndex(COMMUNITY_RECIPES.indexOf(recipe))
+            setAsciiOverride({})
+            setAsciiVisual(true)
+          }
+          return
+        }
+        if (text.startsWith('/ascii mode ')) {
+          const requested = text.slice('/ascii mode '.length).trim()
+          if (ALL_RENDER_MODES.includes(requested as typeof ALL_RENDER_MODES[number])) {
+            setAsciiOverride((current) => ({ ...current, renderMode: normalizeRenderMode(requested) }))
+            setAsciiVisual(true)
+          }
+          return
+        }
         if (text.startsWith('/layout ')) {
           const target = text.slice('/layout '.length).trim() as LayoutProfile
           if (target === 'command-center' || target === 'focus') {
@@ -205,6 +248,7 @@ export function CyberShell({
 
   return (
     <Box flexDirection="column" width={cols} paddingX={0}>
+      <AsciiWordmark palette={palette} ascii={ascii} visible={cols >= 120 && asciiVisual} />
       <HeaderStrip state={state} palette={palette} cols={cols} />
       <Box width={cols} flexDirection="row" marginTop={1} marginBottom={1}>
         {leftCol}
@@ -216,13 +260,23 @@ export function CyberShell({
           </Text>
           <Box flexDirection="column" marginTop={0}>
             <TranscriptPanel state={state} palette={palette} />
+            {asciiVisual && cols >= 80 ? (
+              <AsciiSignal
+                palette={palette}
+                width={Math.max(24, Math.min(72, Math.floor(cols * (decision.focusOnly ? 0.72 : decision.threeColumn ? 0.42 : 0.58))))}
+                active={state.system.running || state.activity.streaming}
+                config={asciiConfig}
+                recipeName={asciiRecipe?.name ?? 'Hermes Native'}
+                animated={interactive}
+              />
+            ) : null}
           </Box>
         </Box>
         {rightCol}
       </Box>
       <CommandComposer value={input} palette={palette} ascii={ascii} hint={composerHint} />
       <Box width={cols} justifyContent="space-between">
-        <Text color={palette.muted}>/layout command-center | /layout focus | Tab focus | Esc quit</Text>
+        <Text color={palette.muted}>/ascii recipe NAME | next | prev | mode STYLE | on | off · /layout focus · Tab · Esc</Text>
         <Text color={palette.muted}>
           {decision.focusOnly ? 'CONVERSATION-FIRST' : decision.threeColumn ? 'FULL COMMAND CENTER' : decision.oneRail ? 'ONE RAIL' : 'FOCUS'}
         </Text>

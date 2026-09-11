@@ -214,3 +214,14 @@ CyberShell layout engine (command-center | focus, responsive breakpoints)
   transcript/streaming/input/tool events, then restore config.
 - Tree-parity/git discipline: no destructive rewrites of main; logical
   commits on feat/cyber-tui-v0.1; PR for review.
+
+## 11. Hermes ASCII Forge
+
+The ASCII plane is now powered by Hermes ASCII Forge, an independent renderer
+implemented in this repository. It consumes attributed public recipe
+configuration but neither embeds the 21st.dev application nor executes remote
+code. See `ASCII_FORGE_ARCHITECTURE.md` for the engine, media, registry, command,
+and provenance design.
+
+The visual layer consumes runtime state only to select LIVE vs AMBIENT. It
+grants no authority and emits no fabricated telemetry.
