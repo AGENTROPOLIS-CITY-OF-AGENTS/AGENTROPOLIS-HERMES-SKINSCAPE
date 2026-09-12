@@ -30,8 +30,9 @@ import {
   TranscriptPanel
 } from './panels.js'
 import { ActivityPulse, CommandComposer, StatusChip, type ChipTone } from './primitives.js'
-import { AsciiSignal, AsciiWordmark } from './ascii-visual.js'
+import { AsciiRecipePicker, AsciiSignal, AsciiWordmark } from './ascii-visual.js'
 import { ALL_RENDER_MODES, COMMUNITY_RECIPES, DEFAULT_ASCII_CONFIG, findCommunityRecipe, normalizeRenderMode } from '../ascii/registry.js'
+import { normalizeMediaPath, pickLocalMedia } from '../ascii/picker.js'
 import type { AsciiRecipeConfig } from '../ascii/types.js'
 import type { GatewayClient } from '../gateway/client.js'
 
@@ -143,6 +144,10 @@ export function CyberShell({
   const [asciiOverride, setAsciiOverride] = useState<Partial<AsciiRecipeConfig>>(() => process.env.HERMES_ASCII_MODE
     ? { renderMode: normalizeRenderMode(process.env.HERMES_ASCII_MODE) }
     : {})
+  const [asciiSourcePath, setAsciiSourcePath] = useState(() => normalizeMediaPath(process.env.HERMES_ASCII_IMAGE || ''))
+  const [asciiPickerOpen, setAsciiPickerOpen] = useState(false)
+  const [asciiPickerIndex, setAsciiPickerIndex] = useState(asciiRecipeIndex)
+  const [asciiNotice, setAsciiNotice] = useState('')
   const asciiRecipe = COMMUNITY_RECIPES[asciiRecipeIndex]
   const asciiConfig = { ...(asciiRecipe?.config ?? DEFAULT_ASCII_CONFIG), ...asciiOverride }
 
@@ -158,6 +163,27 @@ export function CyberShell({
 
   useInput(
     (_input, key) => {
+      if (asciiPickerOpen) {
+        if (key.escape) {
+          setAsciiPickerOpen(false)
+          setAsciiNotice('Recipe selection cancelled')
+          return
+        }
+        if (key.upArrow || key.downArrow) {
+          const direction = key.downArrow ? 1 : -1
+          setAsciiPickerIndex((index) => (index + direction + COMMUNITY_RECIPES.length) % COMMUNITY_RECIPES.length)
+          return
+        }
+        if (key.return) {
+          setAsciiRecipeIndex(asciiPickerIndex)
+          setAsciiOverride({})
+          setAsciiVisual(true)
+          setAsciiPickerOpen(false)
+          setAsciiNotice(`Recipe applied: ${COMMUNITY_RECIPES[asciiPickerIndex]?.name ?? 'Hermes Native'}`)
+          return
+        }
+        return
+      }
       if (key.escape) {
         exit()
         return
@@ -175,6 +201,40 @@ export function CyberShell({
         }
         if (text === '/ascii on') {
           setAsciiVisual(true)
+          return
+        }
+        if (text === '/ascii pick' || text === '/ascii recipes') {
+          setAsciiPickerIndex(asciiRecipeIndex)
+          setAsciiPickerOpen(true)
+          setAsciiNotice('')
+          return
+        }
+        if (text === '/ascii pfp' || text === '/ascii image') {
+          setAsciiNotice('Opening image picker…')
+          void pickLocalMedia()
+            .then((selected) => {
+              if (selected) {
+                setAsciiSourcePath(selected)
+                setAsciiVisual(true)
+                setAsciiNotice(`PFP loaded: ${selected.replace(/^.*[\\/]/, '')}`)
+              } else setAsciiNotice('Image selection cancelled')
+            })
+            .catch((error: unknown) => setAsciiNotice(`Image picker error: ${error instanceof Error ? error.message : String(error)}`))
+          return
+        }
+        if (text === '/ascii image off' || text === '/ascii pfp off') {
+          setAsciiSourcePath('')
+          setAsciiNotice('Procedural source restored')
+          return
+        }
+        if (text.startsWith('/ascii image ') || text.startsWith('/ascii pfp ')) {
+          const prefix = text.startsWith('/ascii image ') ? '/ascii image ' : '/ascii pfp '
+          const selected = normalizeMediaPath(text.slice(prefix.length))
+          if (selected) {
+            setAsciiSourcePath(selected)
+            setAsciiVisual(true)
+            setAsciiNotice(`PFP loaded: ${selected.replace(/^.*[\\/]/, '')}`)
+          }
           return
         }
         if (text === '/ascii next' || text === '/ascii prev') {
@@ -260,7 +320,9 @@ export function CyberShell({
           </Text>
           <Box flexDirection="column" marginTop={0}>
             <TranscriptPanel state={state} palette={palette} />
-            {asciiVisual && cols >= 80 ? (
+            {asciiPickerOpen ? (
+              <AsciiRecipePicker palette={palette} recipes={COMMUNITY_RECIPES} selectedIndex={asciiPickerIndex} />
+            ) : asciiVisual && cols >= 80 ? (
               <AsciiSignal
                 palette={palette}
                 width={Math.max(24, Math.min(72, Math.floor(cols * (decision.focusOnly ? 0.72 : decision.threeColumn ? 0.42 : 0.58))))}
@@ -268,15 +330,17 @@ export function CyberShell({
                 config={asciiConfig}
                 recipeName={asciiRecipe?.name ?? 'Hermes Native'}
                 animated={interactive}
+                sourcePath={asciiSourcePath || undefined}
               />
             ) : null}
+            {asciiNotice ? <Text color={palette.cyan}>{asciiNotice}</Text> : null}
           </Box>
         </Box>
         {rightCol}
       </Box>
       <CommandComposer value={input} palette={palette} ascii={ascii} hint={composerHint} />
       <Box width={cols} justifyContent="space-between">
-        <Text color={palette.muted}>/ascii recipe NAME | next | prev | mode STYLE | on | off · /layout focus · Tab · Esc</Text>
+        <Text color={palette.muted}>/ascii pick | pfp | image PATH | next | prev | mode STYLE | on | off · /layout focus · Tab · Esc</Text>
         <Text color={palette.muted}>
           {decision.focusOnly ? 'CONVERSATION-FIRST' : decision.threeColumn ? 'FULL COMMAND CENTER' : decision.oneRail ? 'ONE RAIL' : 'FOCUS'}
         </Text>

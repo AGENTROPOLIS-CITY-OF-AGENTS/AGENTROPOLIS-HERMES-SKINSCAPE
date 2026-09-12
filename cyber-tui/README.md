@@ -44,11 +44,21 @@ Inside the TUI:
 ```text
 /ascii on
 /ascii off
+/ascii pick
 /ascii next
 /ascii prev
 /ascii recipe Dither Effect
 /ascii mode matrix
+/ascii pfp
+/ascii image "C:\\Users\\marqu\\Pictures\\profile.png"
+/ascii image off
 ```
+
+`/ascii pick` opens the complete 48-recipe vault in the terminal. Use the arrow
+keys and Enter to apply a recipe. On Windows, `/ascii pfp` opens the native file
+chooser; the selected photo or video frame becomes the live Forge source. Use
+`/ascii image PATH` on any platform or to paste a path directly. The recipe and
+render mode remain independently selectable after the PFP is loaded.
 
 Environment controls:
 
@@ -58,6 +68,7 @@ HERMES_ASCII_RECIPE="Dither Effect" # any registry name, slug, or id
 HERMES_ASCII_MODE=matrix            # optional mode override
 HERMES_ASCII_FPS=4                  # 1-12; clamped for terminal performance
 HERMES_ASCII_WORDMARK="NEURO BUILDS"
+HERMES_ASCII_IMAGE="C:\\Users\\marqu\\Pictures\\profile.png"
 ```
 
 The wordmark appears at 120+ columns, the animated signal at 80+ columns, and

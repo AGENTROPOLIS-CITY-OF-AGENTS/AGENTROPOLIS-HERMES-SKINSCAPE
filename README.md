@@ -73,8 +73,11 @@ effects. Its attributed registry contains all 48 public recipes found in the
 21st.dev ASCII community vault at the synchronization date. No 21st.dev runtime
 or hosted media is embedded or executed.
 
-Use `/ascii recipe Dither Effect`, `/ascii next`, `/ascii mode matrix`, or
-`/ascii off` without leaving Hermes. Local media can be rendered from the CLI:
+Use `/ascii pick` to browse the complete vault, `/ascii pfp` to choose a local
+profile image on Windows, or `/ascii image PATH` to load one directly without
+leaving Hermes. Recipes remain selectable with `/ascii recipe Dither Effect`,
+`/ascii next`, and `/ascii mode matrix`. Local media can also be rendered from
+the CLI:
 
 ```bash
 npm run ascii:render -- ./image.png --recipe "Dither Effect" --width 80 --height 24

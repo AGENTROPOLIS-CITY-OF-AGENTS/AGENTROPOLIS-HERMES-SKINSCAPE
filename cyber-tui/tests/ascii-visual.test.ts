@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { buildAsciiFrame, renderWordmark } from '../src/components/ascii-visual.js'
 import { proceduralPlane, renderAscii } from '../src/ascii/engine.js'
 import { ALL_RENDER_MODES, COMMUNITY_RECIPES, findCommunityRecipe, normalizeRecipeConfig } from '../src/ascii/registry.js'
+import { normalizeMediaPath } from '../src/ascii/picker.js'
 
 describe('Hermes ASCII Forge', () => {
   it('loads the complete attributed community vault', () => {
@@ -66,5 +67,11 @@ describe('Hermes ASCII Forge', () => {
     expect(unicode.join('\n')).toContain('█')
     expect(safe.join('\n')).not.toContain('█')
     expect(safe.join('\n')).toContain('#')
+  })
+
+  it('accepts Explorer and PowerShell image paths for the PFP source', () => {
+    expect(normalizeMediaPath('"C:\\Users\\marqu\\Pictures\\profile photo.png"')).toBe('C:\\Users\\marqu\\Pictures\\profile photo.png')
+    expect(normalizeMediaPath("'C:\\Users\\marqu\\Pictures\\pfp.webp'")).toBe('C:\\Users\\marqu\\Pictures\\pfp.webp')
+    expect(normalizeMediaPath('  C:\\Users\\marqu\\Pictures\\pfp.png  ')).toBe('C:\\Users\\marqu\\Pictures\\pfp.png')
   })
 })

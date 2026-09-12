@@ -4,8 +4,9 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Box, Text } from 'ink'
 
 import { proceduralPlane, renderAscii } from '../ascii/engine.js'
+import { decodeMediaFrame } from '../ascii/media.js'
 import { normalizeRecipeConfig } from '../ascii/registry.js'
-import type { AsciiRecipeConfig } from '../ascii/types.js'
+import type { AsciiRecipeConfig, CommunityRecipe, PixelPlane } from '../ascii/types.js'
 import type { CyberPalette } from '../theme/theme.js'
 
 const GLYPHS: Record<string, readonly string[]> = {
@@ -41,11 +42,41 @@ export function AsciiWordmark({ palette, ascii, visible }: { palette: CyberPalet
   </Box>
 }
 
-export function AsciiSignal({ palette, width, active, config, recipeName, animated = true }: {
-  palette: CyberPalette; width: number; active: boolean; config: Partial<AsciiRecipeConfig>; recipeName: string; animated?: boolean
+export function AsciiSignal({ palette, width, active, config, recipeName, animated = true, sourcePath }: {
+  palette: CyberPalette; width: number; active: boolean; config: Partial<AsciiRecipeConfig>; recipeName: string; animated?: boolean; sourcePath?: string
 }): React.JSX.Element {
   const [frame, setFrame] = useState(0)
+  const [mediaPlane, setMediaPlane] = useState<PixelPlane | null>(null)
+  const [mediaState, setMediaState] = useState<'procedural' | 'loading' | 'ready' | 'error'>('procedural')
+  const [mediaError, setMediaError] = useState('')
   const normalized = useMemo(() => normalizeRecipeConfig(config as Partial<AsciiRecipeConfig> & Record<string, unknown>), [config])
+
+  useEffect(() => {
+    let cancelled = false
+    if (!sourcePath) {
+      setMediaPlane(null)
+      setMediaState('procedural')
+      setMediaError('')
+      return () => { cancelled = true }
+    }
+    setMediaState('loading')
+    setMediaError('')
+    void decodeMediaFrame(sourcePath, width, 12)
+      .then((plane) => {
+        if (!cancelled) {
+          setMediaPlane(plane)
+          setMediaState('ready')
+        }
+      })
+      .catch((error: unknown) => {
+        if (!cancelled) {
+          setMediaPlane(null)
+          setMediaState('error')
+          setMediaError(error instanceof Error ? error.message : String(error))
+        }
+      })
+    return () => { cancelled = true }
+  }, [sourcePath, width])
 
   useEffect(() => {
     if (!animated || !normalized.animated) return
@@ -55,13 +86,39 @@ export function AsciiSignal({ palette, width, active, config, recipeName, animat
     return () => clearInterval(timer)
   }, [animated, normalized.animated])
 
-  const lines = useMemo(() => buildAsciiFrame(width, 7, frame, normalized), [frame, normalized, width])
+  const lines = useMemo(
+    () => mediaPlane ? renderAscii(mediaPlane, normalized, frame / 4) : buildAsciiFrame(width, 7, frame, normalized),
+    [frame, mediaPlane, normalized, width]
+  )
   const colors = [palette.muted, palette.cyan, palette.electricBlue, palette.magenta, palette.red, palette.cyan, palette.muted]
+  const sourceLabel = sourcePath ? sourcePath.replace(/^.*[\\/]/, '') : 'PROCEDURAL'
   return <Box flexDirection="column" width="100%" marginTop={1}>
     <Box justifyContent="space-between">
       <Text color={palette.cyan} bold>HERMES ASCII FORGE</Text>
       <Text color={active ? palette.success : palette.muted}>{active ? 'LIVE' : 'AMBIENT'} · {recipeName.toUpperCase()} · {normalized.renderMode.toUpperCase()}</Text>
     </Box>
-    {lines.map((line, index) => <Text key={`${index}-${line}`} color={colors[index]} dimColor={!active}>{line || ' '}</Text>)}
+    <Text color={mediaState === 'error' ? palette.red : palette.muted} wrap="truncate">
+      SOURCE {sourceLabel.toUpperCase()} · {mediaState.toUpperCase()}{mediaError ? ` · ${mediaError}` : ''}
+    </Text>
+    {lines.map((line, index) => <Text key={`${index}-${line}`} color={colors[index % colors.length]} dimColor={!active}>{line || ' '}</Text>)}
+  </Box>
+}
+
+export function AsciiRecipePicker({ palette, recipes, selectedIndex }: {
+  palette: CyberPalette; recipes: readonly CommunityRecipe[]; selectedIndex: number
+}): React.JSX.Element {
+  const radius = 4
+  const start = Math.max(0, Math.min(recipes.length - (radius * 2 + 1), selectedIndex - radius))
+  const visible = recipes.slice(start, start + radius * 2 + 1)
+  return <Box flexDirection="column" width="100%" marginTop={1} borderStyle="round" borderColor={palette.cyan} paddingX={1}>
+    <Text color={palette.cyan} bold>ASCII VAULT · {recipes.length} RECIPES</Text>
+    {visible.map((recipe, offset) => {
+      const index = start + offset
+      const selected = index === selectedIndex
+      return <Text key={recipe.id} color={selected ? palette.textPrimary : palette.muted} bold={selected}>
+        {selected ? '❯' : ' '} {String(index + 1).padStart(2, '0')} · {recipe.name} · {recipe.author} · {String(recipe.config.renderMode ?? 'characters')}
+      </Text>
+    })}
+    <Text color={palette.muted}>↑/↓ choose · Enter apply · Esc cancel</Text>
   </Box>
 }
