@@ -20,6 +20,9 @@ export interface CyberPalette {
   electricBlue: string
   red: string
   magenta: string
+  lime: string
+  purple: string
+  critical: string
   textPrimary: string
   textSecondary: string
   muted: string
@@ -38,6 +41,9 @@ export const AGENTROPOLIS_OBSIDIAN: CyberPalette = {
   electricBlue: '#168CFF',
   red: '#FF4058',
   magenta: '#FF2E88',
+  lime: '#B7FF3C',
+  purple: '#9B5CFF',
+  critical: '#FF2E88',
   textPrimary: '#DCE9F5',
   textSecondary: '#9DB4C8',
   muted: '#5B7891',
@@ -73,6 +79,7 @@ const COLOR_MAP: Record<string, keyof CyberPalette> = {
   ui_border: 'border',
   banner_border: 'border',
   session_label: 'magenta',
+  status_bar_critical: 'critical',
   status_bar_strong: 'textPrimary',
   status_bar_text: 'textSecondary',
   status_bar_dim: 'muted'

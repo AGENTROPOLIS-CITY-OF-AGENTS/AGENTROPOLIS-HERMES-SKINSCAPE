@@ -35,6 +35,7 @@ import { ALL_RENDER_MODES, COMMUNITY_RECIPES, DEFAULT_ASCII_CONFIG, findCommunit
 import { normalizeMediaPath, pickLocalMedia } from '../ascii/picker.js'
 import type { AsciiRecipeConfig } from '../ascii/types.js'
 import type { GatewayClient } from '../gateway/client.js'
+import { asciiWidthForLayout, designSystemStamp, TERMINAL_QUANTIZATION } from '../theme/design-system.js'
 
 export interface CyberShellProps {
   state: CyberState
@@ -308,7 +309,7 @@ export function CyberShell({
 
   return (
     <Box flexDirection="column" width={cols} paddingX={0}>
-      <AsciiWordmark palette={palette} ascii={ascii} visible={cols >= 120 && asciiVisual} />
+      <AsciiWordmark palette={palette} ascii={ascii} visible={cols >= TERMINAL_QUANTIZATION.breakpoints.operational && asciiVisual} />
       <HeaderStrip state={state} palette={palette} cols={cols} />
       <Box width={cols} flexDirection="row" marginTop={1} marginBottom={1}>
         {leftCol}
@@ -322,10 +323,10 @@ export function CyberShell({
             <TranscriptPanel state={state} palette={palette} />
             {asciiPickerOpen ? (
               <AsciiRecipePicker palette={palette} recipes={COMMUNITY_RECIPES} selectedIndex={asciiPickerIndex} />
-            ) : asciiVisual && cols >= 80 ? (
+            ) : asciiVisual && cols >= TERMINAL_QUANTIZATION.breakpoints.compact ? (
               <AsciiSignal
                 palette={palette}
-                width={Math.max(24, Math.min(72, Math.floor(cols * (decision.focusOnly ? 0.72 : decision.threeColumn ? 0.42 : 0.58))))}
+                width={asciiWidthForLayout(cols, decision.focusOnly, decision.threeColumn)}
                 active={state.system.running || state.activity.streaming}
                 config={asciiConfig}
                 recipeName={asciiRecipe?.name ?? 'Hermes Native'}
@@ -343,6 +344,7 @@ export function CyberShell({
         <Text color={palette.muted}>/ascii pick | pfp | image PATH | next | prev | mode STYLE | on | off · /layout focus · Tab · Esc</Text>
         <Text color={palette.muted}>
           {decision.focusOnly ? 'CONVERSATION-FIRST' : decision.threeColumn ? 'FULL COMMAND CENTER' : decision.oneRail ? 'ONE RAIL' : 'FOCUS'}
+          {cols >= TERMINAL_QUANTIZATION.breakpoints.operational ? ` · ${designSystemStamp()}` : ''}
         </Text>
       </Box>
     </Box>

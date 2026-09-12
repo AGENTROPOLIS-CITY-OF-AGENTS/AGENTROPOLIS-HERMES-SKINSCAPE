@@ -42,7 +42,7 @@ export function availabilityColor(a: AvailabilityInfo, palette: CyberPalette): s
 
 // ── StatusChip ────────────────────────────────────────────────────────────
 
-export type ChipTone = 'cyan' | 'red' | 'green' | 'amber' | 'muted' | 'magenta'
+export type ChipTone = 'cyan' | 'red' | 'green' | 'amber' | 'muted' | 'magenta' | 'lime' | 'purple' | 'critical'
 
 export function toneColor(tone: ChipTone, palette: CyberPalette): string {
   switch (tone) {
@@ -56,6 +56,12 @@ export function toneColor(tone: ChipTone, palette: CyberPalette): string {
       return palette.warning
     case 'magenta':
       return palette.magenta
+    case 'lime':
+      return palette.lime
+    case 'purple':
+      return palette.purple
+    case 'critical':
+      return palette.critical
     case 'muted':
     default:
       return palette.muted

@@ -1,5 +1,11 @@
 # HERMES // AGENTROPOLIS — Cyber TUI
 
+This surface consumes the executable **AGENTROPOLIS terminal profile**. The
+footer stamp `AGDS/TUI-1 · QP-1` identifies the active design-system adapter and
+Quantization Protocol. Breakpoints, ASCII dimensions, picker density, spacing,
+and motion rates are constrained to shared terminal-safe scales rather than
+component-local values.
+
 A cyberpunk mission-control TUI for [Hermes Agent](https://github.com/NousResearch/hermes-agent).
 
 This is the **visual/runtime customization layer**. The Hermes runtime, agents,

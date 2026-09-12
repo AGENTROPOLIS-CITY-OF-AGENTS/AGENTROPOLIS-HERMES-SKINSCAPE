@@ -8,6 +8,7 @@ import { decodeMediaFrame } from '../ascii/media.js'
 import { normalizeRecipeConfig } from '../ascii/registry.js'
 import type { AsciiRecipeConfig, CommunityRecipe, PixelPlane } from '../ascii/types.js'
 import type { CyberPalette } from '../theme/theme.js'
+import { TERMINAL_QUANTIZATION, quantizeMotionFps } from '../theme/design-system.js'
 
 const GLYPHS: Record<string, readonly string[]> = {
   A: [' ### ', '#   #', '#####', '#   #', '#   #'], B: ['#### ', '#   #', '#### ', '#   #', '#### '],
@@ -61,7 +62,7 @@ export function AsciiSignal({ palette, width, active, config, recipeName, animat
     }
     setMediaState('loading')
     setMediaError('')
-    void decodeMediaFrame(sourcePath, width, 12)
+    void decodeMediaFrame(sourcePath, width, TERMINAL_QUANTIZATION.asciiHeights.media)
       .then((plane) => {
         if (!cancelled) {
           setMediaPlane(plane)
@@ -81,13 +82,15 @@ export function AsciiSignal({ palette, width, active, config, recipeName, animat
   useEffect(() => {
     if (!animated || !normalized.animated) return
     const requested = Number(process.env.HERMES_ASCII_FPS || 4)
-    const fps = Number.isFinite(requested) ? Math.max(1, Math.min(12, requested)) : 4
+    const fps = quantizeMotionFps(requested)
     const timer = setInterval(() => setFrame((value) => (value + 1) % 10_000), Math.round(1000 / fps))
     return () => clearInterval(timer)
   }, [animated, normalized.animated])
 
   const lines = useMemo(
-    () => mediaPlane ? renderAscii(mediaPlane, normalized, frame / 4) : buildAsciiFrame(width, 7, frame, normalized),
+    () => mediaPlane
+      ? renderAscii(mediaPlane, normalized, frame / 4)
+      : buildAsciiFrame(width, TERMINAL_QUANTIZATION.asciiHeights.ambient, frame, normalized),
     [frame, mediaPlane, normalized, width]
   )
   const colors = [palette.muted, palette.cyan, palette.electricBlue, palette.magenta, palette.red, palette.cyan, palette.muted]
@@ -107,16 +110,18 @@ export function AsciiSignal({ palette, width, active, config, recipeName, animat
 export function AsciiRecipePicker({ palette, recipes, selectedIndex }: {
   palette: CyberPalette; recipes: readonly CommunityRecipe[]; selectedIndex: number
 }): React.JSX.Element {
-  const radius = 4
-  const start = Math.max(0, Math.min(recipes.length - (radius * 2 + 1), selectedIndex - radius))
-  const visible = recipes.slice(start, start + radius * 2 + 1)
+  const windowSize = TERMINAL_QUANTIZATION.recipeWindow
+  const radius = Math.floor(windowSize / 2)
+  const start = Math.max(0, Math.min(recipes.length - windowSize, selectedIndex - radius))
+  const visible = recipes.slice(start, start + windowSize)
   return <Box flexDirection="column" width="100%" marginTop={1} borderStyle="round" borderColor={palette.cyan} paddingX={1}>
     <Text color={palette.cyan} bold>ASCII VAULT · {recipes.length} RECIPES</Text>
     {visible.map((recipe, offset) => {
       const index = start + offset
       const selected = index === selectedIndex
       return <Text key={recipe.id} color={selected ? palette.textPrimary : palette.muted} bold={selected}>
-        {selected ? '❯' : ' '} {String(index + 1).padStart(2, '0')} · {recipe.name} · {recipe.author} · {String(recipe.config.renderMode ?? 'characters')}
+        <Text color={selected ? palette.lime : palette.muted}>{selected ? '❯' : ' '}</Text>{' '}
+        {String(index + 1).padStart(2, '0')} · {recipe.name} · {recipe.author} · {String(recipe.config.renderMode ?? 'characters')}
       </Text>
     })}
     <Text color={palette.muted}>↑/↓ choose · Enter apply · Esc cancel</Text>

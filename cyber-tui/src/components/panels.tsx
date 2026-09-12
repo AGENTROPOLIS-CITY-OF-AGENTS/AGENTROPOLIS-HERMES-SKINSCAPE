@@ -88,7 +88,7 @@ export function AgentsPanel({ state, palette, focused }: { state: CyberState; pa
       {a.availability.availability === 'live' && a.agents.length > 0 ? (
         a.agents.slice(0, 10).map((agent) => (
           <Text key={agent.name} wrap="truncate">
-            <Text color={agent.state === 'tool' ? palette.electricBlue : palette.magenta}>
+            <Text color={agent.state === 'tool' ? palette.electricBlue : palette.purple}>
               {agent.state === 'tool' ? '◆' : '◇'}{' '}
             </Text>
             <Text color={palette.textSecondary}>{agent.name}</Text>
