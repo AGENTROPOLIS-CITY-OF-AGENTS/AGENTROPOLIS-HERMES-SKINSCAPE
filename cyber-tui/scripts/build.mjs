@@ -98,3 +98,17 @@ await build({
 })
 
 console.log('cyber-tui: built dist/resume-canary.js')
+
+await build({
+  entryPoints: [resolve(root, '..', 'src', 'ascii', 'cli.ts')],
+  outfile: resolve(outdir, 'ascii-forge.js'),
+  bundle: true,
+  platform: 'node',
+  target: 'node18',
+  format: 'esm',
+  sourcemap: false,
+  minify: false,
+  banner: { js: banner }
+})
+
+console.log('cyber-tui: built dist/ascii-forge.js')

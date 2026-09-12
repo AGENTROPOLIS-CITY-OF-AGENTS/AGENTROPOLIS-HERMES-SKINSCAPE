@@ -30,7 +30,12 @@ import {
   TranscriptPanel
 } from './panels.js'
 import { ActivityPulse, CommandComposer, StatusChip, type ChipTone } from './primitives.js'
+import { AsciiRecipePicker, AsciiSignal, AsciiWordmark } from './ascii-visual.js'
+import { ALL_RENDER_MODES, COMMUNITY_RECIPES, DEFAULT_ASCII_CONFIG, findCommunityRecipe, normalizeRenderMode } from '../ascii/registry.js'
+import { normalizeMediaPath, pickLocalMedia } from '../ascii/picker.js'
+import type { AsciiRecipeConfig } from '../ascii/types.js'
 import type { GatewayClient } from '../gateway/client.js'
+import { asciiWidthForLayout, designSystemStamp, TERMINAL_QUANTIZATION } from '../theme/design-system.js'
 
 export interface CyberShellProps {
   state: CyberState
@@ -134,6 +139,18 @@ export function CyberShell({
   const [profile, setProfile] = useState<LayoutProfile>('command-center')
   const [input, setInput] = useState('')
   const [focusedPanel, setFocusedPanel] = useState<PanelKey | null>(null)
+  const [asciiVisual, setAsciiVisual] = useState(process.env.HERMES_ASCII_VISUAL !== '0')
+  const initialRecipe = findCommunityRecipe(process.env.HERMES_ASCII_RECIPE || '')
+  const [asciiRecipeIndex, setAsciiRecipeIndex] = useState(() => Math.max(0, initialRecipe ? COMMUNITY_RECIPES.indexOf(initialRecipe) : 0))
+  const [asciiOverride, setAsciiOverride] = useState<Partial<AsciiRecipeConfig>>(() => process.env.HERMES_ASCII_MODE
+    ? { renderMode: normalizeRenderMode(process.env.HERMES_ASCII_MODE) }
+    : {})
+  const [asciiSourcePath, setAsciiSourcePath] = useState(() => normalizeMediaPath(process.env.HERMES_ASCII_IMAGE || ''))
+  const [asciiPickerOpen, setAsciiPickerOpen] = useState(false)
+  const [asciiPickerIndex, setAsciiPickerIndex] = useState(asciiRecipeIndex)
+  const [asciiNotice, setAsciiNotice] = useState('')
+  const asciiRecipe = COMMUNITY_RECIPES[asciiRecipeIndex]
+  const asciiConfig = { ...(asciiRecipe?.config ?? DEFAULT_ASCII_CONFIG), ...asciiOverride }
 
   const decision = decideLayout(cols, profile)
   const { left, right } = panelsForLayout(decision)
@@ -147,6 +164,27 @@ export function CyberShell({
 
   useInput(
     (_input, key) => {
+      if (asciiPickerOpen) {
+        if (key.escape) {
+          setAsciiPickerOpen(false)
+          setAsciiNotice('Recipe selection cancelled')
+          return
+        }
+        if (key.upArrow || key.downArrow) {
+          const direction = key.downArrow ? 1 : -1
+          setAsciiPickerIndex((index) => (index + direction + COMMUNITY_RECIPES.length) % COMMUNITY_RECIPES.length)
+          return
+        }
+        if (key.return) {
+          setAsciiRecipeIndex(asciiPickerIndex)
+          setAsciiOverride({})
+          setAsciiVisual(true)
+          setAsciiPickerOpen(false)
+          setAsciiNotice(`Recipe applied: ${COMMUNITY_RECIPES[asciiPickerIndex]?.name ?? 'Hermes Native'}`)
+          return
+        }
+        return
+      }
       if (key.escape) {
         exit()
         return
@@ -158,6 +196,72 @@ export function CyberShell({
       if (key.return) {
         const text = input.trim()
         setInput('')
+        if (text === '/ascii off') {
+          setAsciiVisual(false)
+          return
+        }
+        if (text === '/ascii on') {
+          setAsciiVisual(true)
+          return
+        }
+        if (text === '/ascii pick' || text === '/ascii recipes') {
+          setAsciiPickerIndex(asciiRecipeIndex)
+          setAsciiPickerOpen(true)
+          setAsciiNotice('')
+          return
+        }
+        if (text === '/ascii pfp' || text === '/ascii image') {
+          setAsciiNotice('Opening image picker…')
+          void pickLocalMedia()
+            .then((selected) => {
+              if (selected) {
+                setAsciiSourcePath(selected)
+                setAsciiVisual(true)
+                setAsciiNotice(`PFP loaded: ${selected.replace(/^.*[\\/]/, '')}`)
+              } else setAsciiNotice('Image selection cancelled')
+            })
+            .catch((error: unknown) => setAsciiNotice(`Image picker error: ${error instanceof Error ? error.message : String(error)}`))
+          return
+        }
+        if (text === '/ascii image off' || text === '/ascii pfp off') {
+          setAsciiSourcePath('')
+          setAsciiNotice('Procedural source restored')
+          return
+        }
+        if (text.startsWith('/ascii image ') || text.startsWith('/ascii pfp ')) {
+          const prefix = text.startsWith('/ascii image ') ? '/ascii image ' : '/ascii pfp '
+          const selected = normalizeMediaPath(text.slice(prefix.length))
+          if (selected) {
+            setAsciiSourcePath(selected)
+            setAsciiVisual(true)
+            setAsciiNotice(`PFP loaded: ${selected.replace(/^.*[\\/]/, '')}`)
+          }
+          return
+        }
+        if (text === '/ascii next' || text === '/ascii prev') {
+          const direction = text.endsWith('next') ? 1 : -1
+          setAsciiRecipeIndex((index) => (index + direction + COMMUNITY_RECIPES.length) % COMMUNITY_RECIPES.length)
+          setAsciiOverride({})
+          setAsciiVisual(true)
+          return
+        }
+        if (text.startsWith('/ascii recipe ')) {
+          const recipe = findCommunityRecipe(text.slice('/ascii recipe '.length))
+          if (recipe) {
+            setAsciiRecipeIndex(COMMUNITY_RECIPES.indexOf(recipe))
+            setAsciiOverride({})
+            setAsciiVisual(true)
+          }
+          return
+        }
+        if (text.startsWith('/ascii mode ')) {
+          const requested = text.slice('/ascii mode '.length).trim()
+          if (ALL_RENDER_MODES.includes(requested as typeof ALL_RENDER_MODES[number])) {
+            setAsciiOverride((current) => ({ ...current, renderMode: normalizeRenderMode(requested) }))
+            setAsciiVisual(true)
+          }
+          return
+        }
         if (text.startsWith('/layout ')) {
           const target = text.slice('/layout '.length).trim() as LayoutProfile
           if (target === 'command-center' || target === 'focus') {
@@ -205,6 +309,7 @@ export function CyberShell({
 
   return (
     <Box flexDirection="column" width={cols} paddingX={0}>
+      <AsciiWordmark palette={palette} ascii={ascii} visible={cols >= TERMINAL_QUANTIZATION.breakpoints.operational && asciiVisual} />
       <HeaderStrip state={state} palette={palette} cols={cols} />
       <Box width={cols} flexDirection="row" marginTop={1} marginBottom={1}>
         {leftCol}
@@ -216,15 +321,30 @@ export function CyberShell({
           </Text>
           <Box flexDirection="column" marginTop={0}>
             <TranscriptPanel state={state} palette={palette} />
+            {asciiPickerOpen ? (
+              <AsciiRecipePicker palette={palette} recipes={COMMUNITY_RECIPES} selectedIndex={asciiPickerIndex} />
+            ) : asciiVisual && cols >= TERMINAL_QUANTIZATION.breakpoints.compact ? (
+              <AsciiSignal
+                palette={palette}
+                width={asciiWidthForLayout(cols, decision.focusOnly, decision.threeColumn)}
+                active={state.system.running || state.activity.streaming}
+                config={asciiConfig}
+                recipeName={asciiRecipe?.name ?? 'Hermes Native'}
+                animated={interactive}
+                sourcePath={asciiSourcePath || undefined}
+              />
+            ) : null}
+            {asciiNotice ? <Text color={palette.cyan}>{asciiNotice}</Text> : null}
           </Box>
         </Box>
         {rightCol}
       </Box>
       <CommandComposer value={input} palette={palette} ascii={ascii} hint={composerHint} />
       <Box width={cols} justifyContent="space-between">
-        <Text color={palette.muted}>/layout command-center | /layout focus | Tab focus | Esc quit</Text>
+        <Text color={palette.muted}>/ascii pick | pfp | image PATH | next | prev | mode STYLE | on | off · /layout focus · Tab · Esc</Text>
         <Text color={palette.muted}>
           {decision.focusOnly ? 'CONVERSATION-FIRST' : decision.threeColumn ? 'FULL COMMAND CENTER' : decision.oneRail ? 'ONE RAIL' : 'FOCUS'}
+          {cols >= TERMINAL_QUANTIZATION.breakpoints.operational ? ` · ${designSystemStamp()}` : ''}
         </Text>
       </Box>
     </Box>
