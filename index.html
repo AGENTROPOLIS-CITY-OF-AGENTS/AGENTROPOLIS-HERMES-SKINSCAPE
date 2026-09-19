@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Turn the original 50 Hermes skins into rotating Agentropolis terminal worlds and generate a branded ASCII identity from an image or URL.">
-  <title>Hermes Skinscape</title>
+  <meta name="description" content="HERMES Skinscape is the visual identity forge for the Agentropolis Intelligence Grid. Build one persistent identity across 50 terminal worlds.">
+  <meta name="theme-color" content="#03070c">
+  <title>HERMES Skinscape | Agentropolis Intelligence Grid</title>
   <link rel="icon" type="image/png" href="assets/branding/favicon.png">
   <link rel="stylesheet" href="./web/styles.css">
   <link rel="stylesheet" href="./web/3d/city.css">
   <link rel="stylesheet" href="./web/onboarding.css">
   <link rel="stylesheet" href="./web/hybrid.css">
+  <link rel="stylesheet" href="./web/agentropolis-design-system.css">
 </head>
 <body>
   <div class="city-stage" aria-hidden="true">
@@ -59,31 +61,56 @@
     </div>
   </header>
 
+  <div class="grid-status-rail" role="status" aria-label="Agentropolis grid status">
+    <span><i class="status-pulse"></i> GRID ONLINE</span>
+    <span>NODE H-50</span>
+    <span>HERMES CITY</span>
+    <span>VISUAL IDENTITY FORGE</span>
+  </div>
+
   <main id="top">
     <section class="hero-command" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">AGENTROPOLIS · HERMES CITY</p>
+        <p class="eyebrow">AGENTROPOLIS / HERMES CITY / NODE H-50</p>
         <h1 id="hero-title">Your identity.<br><span>Fifty worlds.</span><br>One living terminal city.</h1>
-        <p class="hero-lede">Upload a PFP, turn it into colorized ASCII, preserve your brand, and deploy it across every Hermes skin inside the Agentropolis Intelligence Grid.</p>
+        <p class="hero-lede">Forge one persistent identity, render it as colorized ASCII, and deploy it across every Hermes skin inside the Agentropolis Intelligence Grid.</p>
+        <div class="hero-badges" aria-label="System classification">
+          <span>APPLICATION</span>
+          <span>IDENTITY LAYER</span>
+          <span>LOCAL PROCESSING</span>
+        </div>
         <div class="hero-actions">
           <a class="primary-action" href="#forge">✦ Generate identity</a>
           <a class="secondary-action" href="#worlds">Explore 50 worlds</a>
         </div>
       </div>
 
-      <div class="hero-command-card" aria-label="Skinscape status">
-        <div class="hero-command-topline">
-          <span>SKINSCAPE OS</span>
-          <span class="status-live">● ONLINE</span>
+      <aside class="grid-location" aria-label="HERMES Skinscape location in the Agentropolis Intelligence Grid">
+        <div class="location-topline">
+          <span>GRID LOCATION</span>
+          <span class="status-live">● ACTIVE</span>
         </div>
-        <div class="hero-command-grid">
-          <article><strong>50</strong><span>world skins</span></article>
-          <article><strong>1</strong><span>persistent identity</span></article>
-          <article><strong>LOCAL</strong><span>image processing</span></article>
-          <article><strong>3D</strong><span>city renderer</span></article>
+        <div class="globe-orbit" aria-hidden="true">
+          <div class="globe-core">
+            <span class="globe-lat latitude-one"></span>
+            <span class="globe-lat latitude-two"></span>
+            <span class="globe-long longitude-one"></span>
+            <span class="globe-long longitude-two"></span>
+            <i class="district-node"></i>
+            <b>H-50</b>
+          </div>
         </div>
-        <p>Infrastructure becomes the terrain others must build on.</p>
-      </div>
+        <div class="location-copy">
+          <p class="location-kicker">APPLICATION LAYER</p>
+          <h2>HERMES CITY</h2>
+          <p>Visual identity and runtime customization district interface.</p>
+        </div>
+        <div class="location-metrics">
+          <span><b>50</b> WORLDS</span>
+          <span><b>1</b> IDENTITY</span>
+          <span><b>LOCAL</b> PROCESSING</span>
+        </div>
+      </aside>
     </section>
 
     <section id="quickStart" class="quick-start glass-panel command-card" aria-labelledby="quick-start-title">
