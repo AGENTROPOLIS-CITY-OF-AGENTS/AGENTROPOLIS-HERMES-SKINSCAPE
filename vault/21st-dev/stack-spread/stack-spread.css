@@ -1,0 +1,12 @@
+/* AGENTROPOLIS StackSpread design-system binding */
+.agt-stack-spread{position:relative;width:100%;background:var(--agt-obsidian,#050608);color:var(--agt-text,#f5f7fa)}
+.agt-stack-sticky{position:sticky;top:0;height:100vh;overflow:hidden}
+.agt-stack-copy{position:absolute;inset:0;z-index:5;display:grid;place-content:center;text-align:center;padding:2rem;pointer-events:none}
+.agt-stack-copy h2{margin:0;font:700 clamp(2.75rem,6vw,7rem)/.92 var(--agt-display,"Space Grotesk",sans-serif);letter-spacing:-.05em}
+.agt-stack-copy p{max-width:44ch;margin:1rem auto 0;color:var(--agt-muted,#9aa7b3)}
+.agt-eyebrow{font:700 .72rem/1 var(--agt-mono,monospace);letter-spacing:.2em;color:var(--agt-cyan,#00e5ff)!important}
+.agt-stack-stage{position:absolute;inset:0;z-index:10}
+.agt-stack-card{position:absolute;left:50%;top:50%;margin:0;overflow:hidden;border-radius:var(--agt-radius-md,18px);border:var(--agt-edge,1px solid rgba(0,229,255,.28));box-shadow:var(--agt-glow,0 0 24px rgba(0,229,255,.18));will-change:transform}
+.agt-stack-card img{width:100%;height:100%;object-fit:cover;display:block}
+@media (prefers-reduced-motion:reduce){.agt-stack-card{will-change:auto}}
+@media (pointer:coarse){.agt-stack-copy h2{font-size:clamp(2.4rem,11vw,4.5rem)}}
