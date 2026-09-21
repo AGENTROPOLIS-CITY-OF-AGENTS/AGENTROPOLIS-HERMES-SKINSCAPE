@@ -74,3 +74,32 @@ Only the focused shell mounts. Adjacent layers render skeletons. Macro geometry 
 ## Benchmark boundary
 
 Git City supplies a useful interaction benchmark for city navigation and meaningful buildings. neurobuilds.grok.me supplies current AGENTROPOLIS visual-cohesion direction. Neither is a runtime dependency.
+
+## Motion component grammar
+
+### StackSpread
+
+The 21st.dev / Hyperiux-style StackSpread interaction is now an approved AGENTROPOLIS motion primitive.
+
+Use it for:
+- World-to-Region reveals
+- District-city introductions
+- Building portfolios
+- Creator galleries
+- spatial layer transitions
+- narrative asset spreads
+
+Do not use it as the core interaction for `SURFACE_TOOL` layers. Leaf tools remain focused, low-noise HUDs.
+
+Implementation:
+- `vault/21st-dev/stack-spread/StackSpread.tsx`
+- `vault/21st-dev/stack-spread/stack-spread.css`
+- `vault/21st-dev/stack-spread/component.json`
+
+Required behavior:
+- design-token bound
+- reduced-motion aware
+- pointer parallax only where appropriate
+- lazy image loading
+- no forced external media dependency
+- macro shell only unless a specific product flow justifies otherwise
