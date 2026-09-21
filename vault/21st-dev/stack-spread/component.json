@@ -1,0 +1,20 @@
+{
+  "id": "stack-spread",
+  "source": "21st.dev / Hyperiux Vault benchmark",
+  "status": "adapted",
+  "category": "spatial-transition",
+  "layers": ["world", "region", "district", "building", "office"],
+  "do_not_use_for": ["surface_tool"],
+  "dependencies": ["motion/react", "react"],
+  "design_tokens": [
+    "--agt-obsidian", "--agt-text", "--agt-muted", "--agt-cyan",
+    "--agt-display", "--agt-mono", "--agt-radius-md", "--agt-edge", "--agt-glow"
+  ],
+  "behavior": {
+    "scroll_scatter": true,
+    "pointer_parallax": true,
+    "reduced_motion": true,
+    "lazy_images": true
+  },
+  "notes": "Use as a macro spatial transition or portfolio/storytelling surface. Surface tools remain precision HUDs."
+}
