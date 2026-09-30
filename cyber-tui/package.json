@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "ascii:sync": "node scripts/sync-community-recipes.mjs",
+    "ascii:render": "node dist/ascii-forge.js",
     "start": "node dist/entry.js",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "vitest run",

@@ -7,6 +7,8 @@
  * docs/CYBER_TUI_COMPATIBILITY.md.
  */
 
+import { TERMINAL_QUANTIZATION } from '../theme/design-system.js'
+
 export type LayoutProfile = 'command-center' | 'focus'
 export type Breakpoint = 'wide' | 'operational' | 'compact' | 'narrow'
 
@@ -18,16 +20,16 @@ export interface BreakpointRule {
 
 /** Recommended breakpoints per the mission (>=180 / 120-179 / 80-119 / <80). */
 export const BREAKPOINT_RULES: BreakpointRule[] = [
-  { minCols: 180, label: 'WIDE' },
-  { minCols: 120, label: 'OPERATIONAL' },
-  { minCols: 80, label: 'COMPACT' },
-  { minCols: 0, label: 'NARROW' }
+  { minCols: TERMINAL_QUANTIZATION.breakpoints.wide, label: 'WIDE' },
+  { minCols: TERMINAL_QUANTIZATION.breakpoints.operational, label: 'OPERATIONAL' },
+  { minCols: TERMINAL_QUANTIZATION.breakpoints.compact, label: 'COMPACT' },
+  { minCols: TERMINAL_QUANTIZATION.breakpoints.narrow, label: 'NARROW' }
 ]
 
 export function breakpointForWidth(cols: number): Breakpoint {
-  if (cols >= 180) return 'wide'
-  if (cols >= 120) return 'operational'
-  if (cols >= 80) return 'compact'
+  if (cols >= TERMINAL_QUANTIZATION.breakpoints.wide) return 'wide'
+  if (cols >= TERMINAL_QUANTIZATION.breakpoints.operational) return 'operational'
+  if (cols >= TERMINAL_QUANTIZATION.breakpoints.compact) return 'compact'
   return 'narrow'
 }
 
